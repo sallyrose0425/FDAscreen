@@ -1,9 +1,17 @@
 import pandas as pd
-import urllib
 import json
 import re
 from collections import OrderedDict
 import os
+import sys
+from time import sleep
+import requests
+# Replace all the urllib garbage with requests
+if sys.version_info.major == 2:
+    from urllib import urlopen, urlencode, quote
+elif sys.version_info.major == 3:
+    from urllib.parse import urlencode, quote
+    from urllib.request import urlopen
 
 from_types = ["ACC","ID","UPARC","NF90","NF100","GENENAME","EMBL_ID","EMBL","P_ENTREZGENEID","P_GI",
              "PIR","REFSEQ_NT_ID","P_REFSEQ_AC","UNIGENE_ID","PDB_ID","DISPROT_ID","BIOGRID_ID",
@@ -24,11 +32,53 @@ from_types = ["ACC","ID","UPARC","NF90","NF100","GENENAME","EMBL_ID","EMBL","P_E
 
 def check_uniprot_id(protein_id):
     url = 'http://www.uniprot.org/uniprot/%s.txt' % protein_id
-    try:
-        response = urllib.request.urlopen(url)
+    response = urlopen(url)
+    if response.code == 200:
         return True
-    except Exception:
+    else:
         return False
+
+def strip_fasta(s):
+    return ''.join(s.split('\n')[1:])
+
+def get_fasta(uniprot_pid):
+    url = 'http://www.uniprot.org/uniprot/%s.fasta' % uniprot_pid
+    response = urlopen(url)
+    if response.code == 200:
+        return strip_fasta(response.read())
+    else:
+        return None
+
+def smiles_to_cid(smiles):
+    request_url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/identity/smiles/JSON'
+    callback_url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/listkey/%s/cids/JSON'
+    response = requests.post(request_url, [('smiles', smiles)])
+    response = json.loads(response.text)
+    while 'Waiting' in response:
+        sleep(1)
+        listkey = response['Waiting']['ListKey']
+        raw_response = urlopen(callback_url % listkey).read()
+        response = json.loads(raw_response)
+    if not 'IdentifierList' in response:
+        return None
+    return response['IdentifierList']['CID'][0]
+
+def name_to_cid(name):
+    request_url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/%s/synonyms/JSON'
+    response = requests.get(request_url % name)
+    if response.status_code != 200:
+        return None
+    response_dict = json.loads(raw_response.text)
+    return response_dict['InformationList']['Information'][0]['CID']
+
+def cid_to_names(cid):
+    request_url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/%s/synonyms/JSON'
+    response = requests.get(request_url % cid)
+    if response.status_code != 200:
+        return None
+    response_dict = json.loads(response.text)
+    return response_dict['InformationList']['Information'][0]['Synonym']
+
 
 def get_uniprot_ids(protein_id):
     base_url = 'http://www.uniprot.org/mapping?%s'
@@ -38,8 +88,8 @@ def get_uniprot_ids(protein_id):
     results = []
     for from_type in from_types:
         params['from'] = from_type
-        url = base_url % urllib.parse.urlencode(params)
-        response = urllib.request.urlopen(url)
+        url = base_url % urlencode(params)
+        response = urlopen(url)
         content = response.read()
         lines = content.split(b'\n')
         if lines[1]:
@@ -51,17 +101,7 @@ def get_uniprot_ids(protein_id):
 def get_pubchem_json(protein_id):
     base_url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/protein/%s/JSON'
 
-def get_cid_interactions(cid):
-    if os.path.exists('tmp/skip_pids.txt'):
-        skip_pids = eval(open('tmp/skip_pids.txt', 'r').read())
-    else:
-        skip_pids = []
-    if os.path.exists('tmp/pid_map.txt'):
-        pid_map = eval(open('tmp/pid_map.txt', 'r').read())
-    else:
-        pid_map = {}
-    seen = []
-    interactions = []
+def query_cid_interactions(cid):
     base_url = 'https://pubchem.ncbi.nlm.nih.gov/sdq/sdqagent.cgi?%s'
     query = [OrderedDict([('download', ['activity', 'acvalue', 'acname','targetname',
                                         'targeturl','aidname', 'aid', 'sid', 'cid']),
@@ -74,72 +114,62 @@ def get_cid_interactions(cid):
                          ]),
              OrderedDict([('histogram', 'activity'), ('bincount', 10000)])]
     params = {'infmt': 'json', 'outfmt': 'json', 'query': json.dumps(query)}
-    url = base_url % urllib.parse.urlencode(params)
-    table = pd.read_csv(url, na_filter=False)
-    if 'activity' not in table or 'targeturl' not in table:
-        return []
-    ids = []
-    for i, (activity, target_url) in table[['activity', 'targeturl']].iterrows():
-        if activity in ('Active', 'Inactive') and '/protein/' in target_url:
-            pid = target_url.split('/')[-1]
-            if pid in skip_pids:
-                continue
-            if pid not in pid_map:
-                pubchem_url = 'https://pubchem.ncbi.nlm.nih.gov/protein/%s' % pid
-                pubchem_html = str(urllib.request.urlopen(pubchem_url).read())
-                matches = re.findall('<meta name="pubchem_uid_value" content="([^"]+)">', pubchem_html)
-                if matches:
-                    if check_uniprot_id(matches[0]):
-                        pid_map[pid] = matches[0]
-                        pid = matches[0]
-                    else:
-                        skip_pids.append(matches[0])
-                        continue
-                else:
-                    continue
-            else:
-                pid = pid_map[pid]
-            if (cid,pid) not in seen:
-                seen.append((cid,pid))
-                interactions.append((cid, pid, int(activity=='Active')))
-    with open('tmp/skip_pids.txt', 'w') as f:
-        f.write(repr(skip_pids))
-    with open('tmp/pid_map.txt', 'w') as f:
-        f.write(repr(pid_map))
-    return interactions
+    url = base_url % urlencode(params)
+    table = pd.read_csv(url, na_filter=False, engine='python')
+    return table
 
+def pubchem_to_uniprot(pubchem_pid):
+    pid = fasta = None
+    pubchem_url = 'https://pubchem.ncbi.nlm.nih.gov/protein/%s' % pubchem_pid
+    pubchem_html = str(urlopen(pubchem_url).read())
+    matches = re.findall('<meta name="pubchem_uid_value" content="([^"]+)">', pubchem_html)
+    if matches:
+        pid = matches[0]
+        fasta = get_fasta(pid)
+    if not pid or not fasta:
+        print("Couldn't get pid from %s!" % pubchem_pid)
+    return pid, fasta
 
 def main():
-    if not os.path.exists('tmp'):
-        os.mkdir('tmp')
-    if os.path.exists('tmp/skip_cids.txt'):
-        skip_cids = eval(open('tmp/skip_cids.txt', 'r').read())
-    else:
-        skip_cids = []
-    if os.path.exists('data/interactions.csv'):
-        df = pd.read_csv('data/interactions.csv', index_col=0, na_filter=False,
-                         dtype={'cid':str,'pid':str,'activity':int})
-    else:
-        df = pd.DataFrame(columns=['cid', 'pid', 'activity'])
+    interactions = {'cid':[], 'pid':[], 'activity':[]}
+    compounds = {'cid':[], 'smiles':[]}
+    proteins = {'pid':[], 'fasta':[]}
 
-    drugs = pd.read_csv('data/drugDataset.txt', delimiter='\t', 
-                         names=['drugbankId', 'drugName', 'drugSMILES', 'drugInChI', 'drugPubChemCompound'], 
+    drugs = pd.read_csv('data/drugDataset.txt', delimiter='\t',
+                         names=['dbid', 'name', 'smiles', 'inchi', 'cid'],
                          na_filter=False)
 
-    for cid in drugs['drugPubChemCompound']:
-        if cid:
-            if cid in skip_cids:
-                print('Skipping cid', cid)
-            elif cid in df['cid'].values:
-                print('Skipping cid', cid)
-                skip_cids.append(cid)
-            else:
-                print(cid)
-                interactions = get_cid_interactions(cid)
-                print(interactions)
-                rows = pd.DataFrame(interactions, columns=['cid', 'pid', 'activity'], dtype=object)
-                df = df.append(rows, ignore_index=True)
-                skip_cids.append(cid)
-                with open('tmp/skip_cids.txt', 'w') as f:
-                    f.write(repr(skip_cids))
-                df.to_csv('data/interactions.csv')
+    for index, cid, smiles in drugs[['cid','smiles']].itertuples():
+        if not cid and smiles:
+            cid = smiles_to_cid(smiles)
+        if not cid:
+            print("Couldn't get cid!")
+            continue
+        print(cid)
+        if not smiles:
+            print("Doesn't have smiles!")
+            continue
+        if cid not in compounds['cid']:
+            compounds['cid'].append(cid)
+            compounds['smiles'].append(smiles)
+        if cid in interactions['cid']:
+            print('Skipping cid', cid)
+            continue
+        table = query_cid_interactions(cid)
+        if 'activity' not in table or 'targeturl' not in table:
+            print('Unable to get interactions!')
+            continue
+        for index, activity, target_url in table[['activity', 'targeturl']].itertuples():
+            if activity in ('Active', 'Inactive') and '/protein/' in target_url:
+                pubchem_pid = target_url.split('/')[-1]
+                pid, fasta = pubchem_to_uniprot(pubchem_pid)
+                if not pid or not fasta:
+                    continue
+                if pid not in proteins['pid']:
+                    proteins['pid'].append(pid)
+                    proteins['fasta'].append(fasta)
+                interactions['cid'].append(cid)
+                interactions['pid'].append(pid)
+                interactions['activity'].append(int(activity=='Active'))
+                print(cid, pid, activity=='Active')
+    return compounds, proteins, interactions
