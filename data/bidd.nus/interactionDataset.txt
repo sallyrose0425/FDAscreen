@@ -1,0 +1,1552 @@
+TTDDrugID	TTDTargetID	targetName	actions
+D03YLE	T85435	Insulin receptor	Binder
+D06SVW	T85435	Insulin receptor	Binder
+D0L6JE	T85435	Insulin receptor	Binder
+D07MEH	T85435	Insulin receptor	Stimulator
+D09PPG	T85435	Insulin receptor	Inhibitor
+D05FGG	T74456	Type-1 angiotensin II receptor	Modulator
+D0D5SQ	T74456	Type-1 angiotensin II receptor	Antagonist
+D0T7US	T74456	Type-1 angiotensin II receptor	Antagonist
+D00NVX	T74456	Type-1 angiotensin II receptor	Antagonist
+D00JAU	T74456	Type-1 angiotensin II receptor	Antagonist
+D0DD0K	T74456	Type-1 angiotensin II receptor	Antagonist
+D07UBG	T74456	Type-1 angiotensin II receptor	Antagonist
+D0B9AO	T74456	Type-1 angiotensin II receptor	Antagonist
+D0K0AT	T74456	Type-1 angiotensin II receptor	Inhibitor
+D00VFE	T74456	Type-1 angiotensin II receptor	Modulator
+D0M7TO	T74456	Type-1 angiotensin II receptor	Antagonist
+D0N6RF	T74456	Type-1 angiotensin II receptor	Antagonist
+D06UDG	T74456	Type-1 angiotensin II receptor	Antagonist
+D05UFG	T59328	Epidermal growth factor receptor	Inhibitor
+D00ZHQ	T59328	Epidermal growth factor receptor	Activator
+D08TPS	T59328	Epidermal growth factor receptor	Modulator
+D07POC	T59328	Epidermal growth factor receptor	Inhibitor
+D09XZB	T59328	Epidermal growth factor receptor	Inhibitor
+D08CDI	T59328	Epidermal growth factor receptor	Inhibitor
+D0F0ZE	T59328	Epidermal growth factor receptor	Inhibitor
+D0G6QF	T59328	Epidermal growth factor receptor	Inhibitor
+D02VPX	T34234	Vitamin D receptor	Antagonist
+D06GSS	T34234	Vitamin D receptor	Modulator
+D01QUS	T34234	Vitamin D receptor	Antagonist
+D0K5WS	T34234	Vitamin D receptor	Binder
+D0G8OC	T34234	Vitamin D receptor	Antagonist
+D0G5CF	T34234	Vitamin D receptor	Antagonist
+D06JPB	T34234	Vitamin D receptor	Antagonist
+D0N1TP	T34234	Vitamin D receptor	Agonist
+D05UFG	T14597	Receptor protein-tyrosine kinase erbB-2	Inhibitor
+D08CDI	T14597	Receptor protein-tyrosine kinase erbB-2	Inhibitor
+D0U3YB	T14597	Receptor protein-tyrosine kinase erbB-2	Modulator
+D0F0ZE	T14597	Receptor protein-tyrosine kinase erbB-2	Inhibitor
+D0L5RW	T96079	C-X-C chemokine receptor 4	Antagonist
+D06LOQ	T89534	Estrogen receptor	Inhibitor
+D0JY8T	T89534	Estrogen receptor	Modulator
+D0N6YV	T89534	Estrogen receptor	Agonist
+D0X0KJ	T89534	Estrogen receptor	Binder
+D0CT9Y	T89534	Estrogen receptor	Modulator
+D0I5WB	T89534	Estrogen receptor	Modulator
+D0X1EZ	T89534	Estrogen receptor	Modulator
+D09IPV	T89534	Estrogen receptor	Antagonist
+D09ZQN	T89534	Estrogen receptor	Agonist
+D0Y2NE	T89534	Estrogen receptor	Agonist
+D08QMX	T89534	Estrogen receptor	Agonist
+D0T7ZQ	T89534	Estrogen receptor	Modulator
+D0U0XD	T89534	Estrogen receptor	Modulator
+D07VBA	T89534	Estrogen receptor	Modulator
+D02YUT	T89534	Estrogen receptor	Agonist
+D0Z1FX	T89534	Estrogen receptor	Agonist
+D00ZFP	T89534	Estrogen receptor	Agonist
+D03IUY	T89534	Estrogen receptor	Modulator
+D06NXY	T89534	Estrogen receptor	Agonist
+D0JO8Z	T89534	Estrogen receptor	Modulator
+D0JO7Y	T89534	Estrogen receptor	Antagonist
+D0M5RF	T89534	Estrogen receptor	Modulator
+D09NMD	T89534	Estrogen receptor	Modulator
+D0J1ML	T89534	Estrogen receptor	Agonist
+D0Z5OE	T89534	Estrogen receptor	Binder
+D0V2JK	T89534	Estrogen receptor	Modulator
+D02CTS	T89534	Estrogen receptor	Modulator
+D04UZT	T89534	Estrogen receptor	Modulator
+D01XBA	T89534	Estrogen receptor	Modulator
+D07KSG	T89534	Estrogen receptor	Antagonist
+D04VFJ	T89534	Estrogen receptor	Modulator
+D0I5HF	T84631	Coagulation factor Xa	Inhibitor
+D0J0BU	T84631	Coagulation factor Xa	Modulator
+D0E7MB	T84631	Coagulation factor Xa	Modulator
+D0C3BS	T84631	Coagulation factor Xa	Modulator
+D0NE9T	T84631	Coagulation factor Xa	Inhibitor
+D08PSU	T84631	Coagulation factor Xa	Modulator
+D0KG3R	T84631	Coagulation factor Xa	Modulator
+D09QDP	T83875	Amine oxidase [flavin-containing] A	Inhibitor
+D0I2VK	T83875	Amine oxidase [flavin-containing] A	Inhibitor
+D01ZSO	T83875	Amine oxidase [flavin-containing] A	Inhibitor
+D0H0HJ	T83875	Amine oxidase [flavin-containing] A	Inhibitor
+D01ZRI	T80975	Vascular endothelial growth factor receptor 2	Modulator
+D0IQ6P	T80975	Vascular endothelial growth factor receptor 2	Inhibitor
+D09GDD	T80975	Vascular endothelial growth factor receptor 2	Modulator
+D0W5HK	T80975	Vascular endothelial growth factor receptor 2	Modulator
+D0R0MW	T80975	Vascular endothelial growth factor receptor 2	Modulator
+D0G6QF	T80975	Vascular endothelial growth factor receptor 2	Inhibitor
+D0SZ6E	T80975	Vascular endothelial growth factor receptor 2	Inhibitor
+D01WJL	T78464	Prostaglandin G/H synthase 2	Modulator
+D0IT2X	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D03RTS	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D08LFZ	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D0N1WU	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D09MGR	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D06LHG	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D0B2WJ	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D0A1PX	T78464	Prostaglandin G/H synthase 2	Modulator
+D0R1QE	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D0R1RS	T78464	Prostaglandin G/H synthase 2	Modulator
+D0W9WF	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D04YMH	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D0MN9K	T78464	Prostaglandin G/H synthase 2	Modulator
+D05FTJ	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D0G7FJ	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D05CKR	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D0DJ1B	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D00HGB	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D07VHR	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D05VLS	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D0I6IB	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D0S7VO	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D09BHB	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D0L6DA	T78464	Prostaglandin G/H synthase 2	Inhibitor
+D0R7WU	T67684	Muscarinic acetylcholine receptor M3	Inhibitor
+D0Q4CS	T67684	Muscarinic acetylcholine receptor M3	Agonist
+D0Y5AM	T67684	Muscarinic acetylcholine receptor M3	Antagonist
+D0S0AS	T67684	Muscarinic acetylcholine receptor M3	Modulator
+D07KHH	T67684	Muscarinic acetylcholine receptor M3	Antagonist
+D04MWJ	T67684	Muscarinic acetylcholine receptor M3	Modulator
+D04LHJ	T67684	Muscarinic acetylcholine receptor M3	Modulator
+D05KZK	T67684	Muscarinic acetylcholine receptor M3	Agonist
+D0L4YD	T67684	Muscarinic acetylcholine receptor M3	Antagonist
+D0Q7ZQ	T67684	Muscarinic acetylcholine receptor M3	Antagonist
+D0P1WA	T67684	Muscarinic acetylcholine receptor M3	Antagonist
+D0BZ7W	T67684	Muscarinic acetylcholine receptor M3	Antagonist
+D0L0MB	T67162	D(2) dopamine receptor	Antagonist
+D03ELL	T67162	D(2) dopamine receptor	Antagonist
+D02DPU	T67162	D(2) dopamine receptor	Inhibitor
+D0H6QU	T67162	D(2) dopamine receptor	Agonist
+D0H3HM	T67162	D(2) dopamine receptor	Agonist
+D01SAT	T67162	D(2) dopamine receptor	Antagonist
+D06YFA	T67162	D(2) dopamine receptor	Agonist
+D04EGX	T67162	D(2) dopamine receptor	Agonist
+D05XGO	T67162	D(2) dopamine receptor	Modulator
+D01QML	T67162	D(2) dopamine receptor	Antagonist
+D01ZII	T67162	D(2) dopamine receptor	Antagonist
+D0B0CP	T67162	D(2) dopamine receptor	Antagonist
+D0T2IA	T67162	D(2) dopamine receptor	Antagonist
+D0Q9ON	T67162	D(2) dopamine receptor	Modulator
+D0V3ZA	T67162	D(2) dopamine receptor	Agonist
+D0SP3D	T67162	D(2) dopamine receptor	Agonist
+D0K2TB	T67162	D(2) dopamine receptor	Modulator
+D0AV3G	T67162	D(2) dopamine receptor	Antagonist
+D0T7OW	T67162	D(2) dopamine receptor	Agonist
+D0V7XF	T67162	D(2) dopamine receptor	Modulator
+D03CJL	T67162	D(2) dopamine receptor	Binder
+D0LG8E	T67162	D(2) dopamine receptor	Agonist
+D0C1IW	T67162	D(2) dopamine receptor	Agonist
+D0U5FS	T67162	D(2) dopamine receptor	Antagonist
+D0D1AL	T67162	D(2) dopamine receptor	Antagonist
+D0U9QU	T67162	D(2) dopamine receptor	Modulator
+D0M8VE	T67162	D(2) dopamine receptor	Antagonist
+D08HVR	T67162	D(2) dopamine receptor	Modulator
+D09LZT	T67162	D(2) dopamine receptor	Modulator
+D0X7KB	T67162	D(2) dopamine receptor	Agonist
+D0U5OE	T67162	D(2) dopamine receptor	Antagonist
+D01QGX	T67162	D(2) dopamine receptor	Modulator
+D0G1OZ	T67162	D(2) dopamine receptor	Agonist
+D04AAN	T67162	D(2) dopamine receptor	Agonist
+D04EYC	T67162	D(2) dopamine receptor	Agonist
+D03FPU	T67162	D(2) dopamine receptor	Agonist
+D0BA6T	T67162	D(2) dopamine receptor	Agonist
+D08VYV	T67162	D(2) dopamine receptor	Antagonist
+D09TPF	T67162	D(2) dopamine receptor	Binder
+D09OQV	T67162	D(2) dopamine receptor	Agonist
+D0O6IZ	T67162	D(2) dopamine receptor	Agonist
+D0IN7I	T67162	D(2) dopamine receptor	Agonist
+D0V4QS	T67162	D(2) dopamine receptor	Agonist
+D0P0OU	T67162	D(2) dopamine receptor	Modulator
+D0F9KL	T67162	D(2) dopamine receptor	Antagonist
+D04JCN	T67162	D(2) dopamine receptor	Modulator
+D02HED	T67162	D(2) dopamine receptor	Antagonist
+D0X2DK	T67162	D(2) dopamine receptor	Antagonist
+D01JUF	T67162	D(2) dopamine receptor	Antagonist
+D0O6IU	T67162	D(2) dopamine receptor	Agonist
+D0KS6W	T67162	D(2) dopamine receptor	Inhibitor
+D00KHM	T67162	D(2) dopamine receptor	Antagonist
+D0AO6B	T67162	D(2) dopamine receptor	Modulator
+D0G8NN	T67162	D(2) dopamine receptor	Modulator
+D0B2UZ	T67162	D(2) dopamine receptor	Antagonist
+D00HHS	T67162	D(2) dopamine receptor	Stimulator
+D0H7KF	T67162	D(2) dopamine receptor	Agonist
+D0W9ZF	T67162	D(2) dopamine receptor	Agonist
+D01AZG	T67162	D(2) dopamine receptor	Antagonist
+D0R9EQ	T67162	D(2) dopamine receptor	Modulator
+D03QGM	T67162	D(2) dopamine receptor	Antagonist
+D0Y0ER	T67162	D(2) dopamine receptor	Antagonist
+D0U1OE	T67162	D(2) dopamine receptor	Antagonist
+D0E0LQ	T67162	D(2) dopamine receptor	Antagonist
+D02LCR	T67162	D(2) dopamine receptor	Antagonist
+D03RZV	T67162	D(2) dopamine receptor	Antagonist
+D0R1JV	T67162	D(2) dopamine receptor	Agonist
+D0I8LU	T67162	D(2) dopamine receptor	Antagonist
+D00HCQ	T52227	Thymidylate synthase	Inhibitor
+D06EGK	T52227	Thymidylate synthase	Inhibitor
+D0S5WG	T52227	Thymidylate synthase	Inhibitor
+D05LEO	T52227	Thymidylate synthase	Inhibitor
+D0M3MN	T52227	Thymidylate synthase	Inhibitor
+D0Y4GO	T52227	Thymidylate synthase	Inhibitor
+D01KKQ	T52227	Thymidylate synthase	Inhibitor
+D05RHI	T52227	Thymidylate synthase	Inhibitor
+D0D0YM	T51408	Beta-3 adrenergic receptor	Modulator
+D06RUL	T51408	Beta-3 adrenergic receptor	Modulator
+D0H5MB	T51408	Beta-3 adrenergic receptor	Modulator
+D0X5UN	T51408	Beta-3 adrenergic receptor	Modulator
+D09SSC	T51408	Beta-3 adrenergic receptor	Modulator
+D03UVS	T38301	Ribonucleoside-diphosphatereductase subunit M2	Modulator
+D07CWD	T38301	Ribonucleoside-diphosphatereductase subunit M2	Modulator
+D0P6UB	T29500	Alpha-1B adrenergic receptor	Antagonist
+D09GYT	T29500	Alpha-1B adrenergic receptor	Stimulator
+D0T6SU	T29500	Alpha-1B adrenergic receptor	Antagonist
+D00AWT	T29500	Alpha-1B adrenergic receptor	Binder
+D0V9BD	T11211	Androgen receptor	Antagonist
+D06AEO	T11211	Androgen receptor	Antagonist
+D09NNA	T11211	Androgen receptor	Binder
+D0QK5X	T11211	Androgen receptor	Modulator
+D0SC8F	T11211	Androgen receptor	Modulator
+D0B2WJ	T11211	Androgen receptor	Inhibitor
+D0L2LS	T11211	Androgen receptor	Agonist
+D0Y0SW	T11211	Androgen receptor	Antagonist
+D0BC2E	T11211	Androgen receptor	Antagonist
+D00YWP	T11211	Androgen receptor	Agonist
+D0SN9T	T11211	Androgen receptor	Antagonist
+D0U3GL	T11211	Androgen receptor	Agonist
+D06XMU	T11211	Androgen receptor	Agonist
+D0Y9EW	T99089	B-Raf proto-oncogene serine/threonine-protein kinase	Modulator
+D09WKB	T94033	Coagulation factor IIa	Modulator
+D07UWV	T94033	Coagulation factor IIa	Inhibitor
+D09HVL	T94033	Coagulation factor IIa	Inhibitor
+D0M7JT	T94033	Coagulation factor IIa	Inhibitor
+D09LPN	T94033	Coagulation factor IIa	Inhibitor
+D0B5LF	T94033	Coagulation factor IIa	Inhibitor
+D06IAR	T86679	Adenosine A2b receptor	Modulator
+D0NI0C	T86679	Adenosine A2b receptor	Modulator
+D03AJX	T83145	Nuclear factor NF-kappa-B	Inhibitor
+D0U2OO	T78709	5-hydroxytryptamine 1A receptor	Agonist
+D0S9CB	T78709	5-hydroxytryptamine 1A receptor	Modulator
+D0P0OU	T78709	5-hydroxytryptamine 1A receptor	Modulator
+D03SFU	T78709	5-hydroxytryptamine 1A receptor	Inhibitor
+D00USF	T78709	5-hydroxytryptamine 1A receptor	Modulator
+D07NJI	T78709	5-hydroxytryptamine 1A receptor	Antagonist
+D0K0VO	T78709	5-hydroxytryptamine 1A receptor	Agonist
+D0X6BV	T78709	5-hydroxytryptamine 1A receptor	Modulator
+D0J5VR	T67849	PI3K delta	Inhibitor
+D06GKN	T64591	5-hydroxytryptamine receptor 3A	Antagonist
+D00YLW	T64591	5-hydroxytryptamine receptor 3A	Antagonist
+D01XRM	T64591	5-hydroxytryptamine receptor 3A	Antagonist
+D04FVU	T64591	5-hydroxytryptamine receptor 3A	Antagonist
+D0TZ1G	T64591	5-hydroxytryptamine receptor 3A	Antagonist
+D0K0KH	T64591	5-hydroxytryptamine receptor 3A	Antagonist
+D01WJL	T60529	Prostaglandin G/H synthase 1	Modulator
+D0A6KR	T60529	Prostaglandin G/H synthase 1	Inhibitor
+D0U1OM	T60529	Prostaglandin G/H synthase 1	Inhibitor
+D06LHG	T60529	Prostaglandin G/H synthase 1	Inhibitor
+D0B2WJ	T60529	Prostaglandin G/H synthase 1	Inhibitor
+D0O1TC	T60529	Prostaglandin G/H synthase 1	Inhibitor
+D0MN9K	T60529	Prostaglandin G/H synthase 1	Modulator
+D0C4YC	T60529	Prostaglandin G/H synthase 1	Inhibitor
+D0DJ1B	T60529	Prostaglandin G/H synthase 1	Inhibitor
+D00IBN	T60529	Prostaglandin G/H synthase 1	Modulator
+D07HBX	T60529	Prostaglandin G/H synthase 1	Inhibitor
+D0Y0JH	T60529	Prostaglandin G/H synthase 1	Inhibitor
+D07BPS	T60529	Prostaglandin G/H synthase 1	Inhibitor
+D03OFF	T58921	Peroxisome proliferator activated receptor gamma	Agonist
+D0K5ER	T58921	Peroxisome proliferator activated receptor gamma	Agonist
+D0K8IX	T58921	Peroxisome proliferator activated receptor gamma	Agonist
+D06XZW	T58921	Peroxisome proliferator activated receptor gamma	Agonist
+D02QCD	T55959	Sodium-dependent dopamine transporter	Inhibitor
+D02GJZ	T55959	Sodium-dependent dopamine transporter	Modulator
+D02PPN	T55959	Sodium-dependent dopamine transporter	Blocker
+D07HQC	T55959	Sodium-dependent dopamine transporter	Modulator
+D01QIN	T53585	3-hydroxy-3-methylglutaryl-coenzyme A reductase	Inhibitor
+D03KIA	T53585	3-hydroxy-3-methylglutaryl-coenzyme A reductase	Inhibitor
+D08GHB	T53585	3-hydroxy-3-methylglutaryl-coenzyme A reductase	Inhibitor
+D06WTZ	T53585	3-hydroxy-3-methylglutaryl-coenzyme A reductase	Inhibitor
+D0G1WL	T53585	3-hydroxy-3-methylglutaryl-coenzyme A reductase	Inhibitor
+D02RQU	T53585	3-hydroxy-3-methylglutaryl-coenzyme A reductase	Inhibitor
+D0XB8R	T53585	3-hydroxy-3-methylglutaryl-coenzyme A reductase	Inhibitor
+D0JE2E	T53585	3-hydroxy-3-methylglutaryl-coenzyme A reductase	Inhibitor
+D0H0ND	T53585	3-hydroxy-3-methylglutaryl-coenzyme A reductase	Inhibitor
+D09PUR	T53585	3-hydroxy-3-methylglutaryl-coenzyme A reductase	Inhibitor
+D03VFL	T53585	3-hydroxy-3-methylglutaryl-coenzyme A reductase	Inhibitor
+D0G5QB	T47768	Mu-type opioid receptor	Agonist
+D0D7KC	T47768	Mu-type opioid receptor	Antagonist
+D0X6HD	T47768	Mu-type opioid receptor	Agonist
+D05ZTJ	T47768	Mu-type opioid receptor	Modulator
+D06AWE	T47768	Mu-type opioid receptor	Agonist
+D0J2TN	T47768	Mu-type opioid receptor	Agonist
+D09ZXR	T47768	Mu-type opioid receptor	Modulator
+D0E1WI	T47768	Mu-type opioid receptor	Modulator
+D0X5KF	T47768	Mu-type opioid receptor	Modulator
+D05PIZ	T47768	Mu-type opioid receptor	Agonist
+D0HF0W	T47768	Mu-type opioid receptor	Modulator
+D0GR0T	T47768	Mu-type opioid receptor	Agonist
+D03YVO	T47768	Mu-type opioid receptor	Modulator
+D0WE3O	T47768	Mu-type opioid receptor	Modulator
+D07LCF	T47768	Mu-type opioid receptor	Modulator
+D0X3FX	T47768	Mu-type opioid receptor	Antagonist
+D03HCZ	T47768	Mu-type opioid receptor	Modulator
+D0T5OX	T47768	Mu-type opioid receptor	Agonist
+D0K4MH	T47768	Mu-type opioid receptor	Modulator
+D0HD9K	T44068	Beta-1 adrenergic receptor	Antagonist
+D01JGV	T44068	Beta-1 adrenergic receptor	Modulator
+D06VFO	T44068	Beta-1 adrenergic receptor	Modulator
+D05ZJG	T44068	Beta-1 adrenergic receptor	Modulator
+D06KYN	T44068	Beta-1 adrenergic receptor	Stimulator
+D01UXC	T44068	Beta-1 adrenergic receptor	Antagonist
+D03ROX	T44068	Beta-1 adrenergic receptor	Antagonist
+D0JP4H	T44068	Beta-1 adrenergic receptor	Antagonist
+D0K3ZR	T44068	Beta-1 adrenergic receptor	Antagonist
+D02YYF	T44068	Beta-1 adrenergic receptor	Antagonist
+D03GCJ	T44068	Beta-1 adrenergic receptor	Agonist
+D01JFT	T44068	Beta-1 adrenergic receptor	Antagonist
+D0J7RK	T44068	Beta-1 adrenergic receptor	Agonist
+D04PHC	T44068	Beta-1 adrenergic receptor	Agonist
+D03XTC	T44068	Beta-1 adrenergic receptor	Antagonist
+D0A6CQ	T44068	Beta-1 adrenergic receptor	Antagonist
+D00IUG	T44068	Beta-1 adrenergic receptor	Antagonist
+D0L5FY	T44068	Beta-1 adrenergic receptor	Antagonist
+D0I2MK	T44068	Beta-1 adrenergic receptor	Antagonist
+D05SHK	T44068	Beta-1 adrenergic receptor	Modulator
+D0Z1UA	T44068	Beta-1 adrenergic receptor	Antagonist
+D07MOX	T44068	Beta-1 adrenergic receptor	Stimulator
+D0X2MB	T44068	Beta-1 adrenergic receptor	Antagonist
+D0W8SB	T44068	Beta-1 adrenergic receptor	Antagonist
+D0F2PO	T44068	Beta-1 adrenergic receptor	Antagonist
+D0KD1U	T44068	Beta-1 adrenergic receptor	Antagonist
+D04JEE	T44068	Beta-1 adrenergic receptor	Antagonist
+D02FCQ	T44068	Beta-1 adrenergic receptor	Modulator
+D04VMT	T44068	Beta-1 adrenergic receptor	Antagonist
+D05UVD	T44068	Beta-1 adrenergic receptor	Antagonist
+D0CW1P	T40016	Glucocorticoid receptor	Agonist
+D06CWH	T40016	Glucocorticoid receptor	Modulator
+D03SXE	T40016	Glucocorticoid receptor	Modulator
+D0Y7IU	T40016	Glucocorticoid receptor	Antagonist
+D09WYX	T40016	Glucocorticoid receptor	Modulator
+D0IT2G	T40016	Glucocorticoid receptor	Agonist
+D0NA8U	T40016	Glucocorticoid receptor	Agonist
+D0FM2P	T40016	Glucocorticoid receptor	Agonist
+D02QJH	T40016	Glucocorticoid receptor	Modulator
+D0P0HT	T40016	Glucocorticoid receptor	Binder
+D0LC6K	T40016	Glucocorticoid receptor	Antagonist
+D0Y7JU	T40016	Glucocorticoid receptor	Agonist
+D05RXI	T40016	Glucocorticoid receptor	Modulator
+D0KR5B	T40016	Glucocorticoid receptor	Modulator
+D0I5DS	T40016	Glucocorticoid receptor	Modulator
+D08PIQ	T40016	Glucocorticoid receptor	Modulator
+D0Z4EI	T40016	Glucocorticoid receptor	Modulator
+D03HYX	T40016	Glucocorticoid receptor	Agonist
+D0D1SG	T40016	Glucocorticoid receptor	Modulator
+D0IL7L	T40016	Glucocorticoid receptor	Agonist
+D03BLF	T40016	Glucocorticoid receptor	Modulator
+D01NLB	T38338	Voltage-dependent N-type calcium channel	Blocker
+D0L1OY	T34429	Neuronal acetylcholine receptor protein, alpha-7 chain	Inhibitor
+D0E0NJ	T34429	Neuronal acetylcholine receptor protein, alpha-7 chain	Binder
+D00PBX	T31309	Apoptosis regulator Bcl-2	Modulator
+D06DLI	T31309	Apoptosis regulator Bcl-2	Regulator (upregulator)
+D0C4RB	T31309	Apoptosis regulator Bcl-2	Modulator
+D0M6DO	T13260	Cytochrome P450 19	Inhibitor
+D0W0BF	T13260	Cytochrome P450 19	Inhibitor
+D0D2VS	T13260	Cytochrome P450 19	Inhibitor
+D0ZX1P	T13260	Cytochrome P450 19	Inhibitor
+D0C1WH	T13260	Cytochrome P450 19	Inhibitor
+D0C7JF	T13260	Cytochrome P450 19	Inhibitor
+D0NR6S	T09960	C-C chemokinereceptor type 5	Antagonist
+D05GJW	T03661	Adenosine deaminase	Inhibitor
+D0F2XQ	T03661	Adenosine deaminase	Inhibitor
+D0T3AD	T03661	Adenosine deaminase	Inhibitor
+D04RGA	T99954	Prostacyclin receptor	Antagonist
+D0V0IX	T99954	Prostacyclin receptor	Agonist
+D09ANG	T99954	Prostacyclin receptor	Antagonist
+D0N2SR	T99954	Prostacyclin receptor	Agonist
+D01WUA	T99954	Prostacyclin receptor	Agonist
+D0B3HD	T92072	Adenosine A1 receptor	Antagonist
+D0FD0H	T89034	Plasminogen	Inhibitor
+D03HYQ	T89034	Plasminogen	Modulator
+D04URO	T89034	Plasminogen	Activator
+D05HXX	T89034	Plasminogen	Inhibitor
+D0OB0F	T85943	Proto-oncogene tyrosine-protein kinase SRC	Inhibitor
+D0E6XR	T85943	Proto-oncogene tyrosine-protein kinase SRC	Inhibitor
+D07DIM	T85943	Proto-oncogene tyrosine-protein kinase SRC	Inhibitor
+D03MTN	T78585	Interleukin-5	Modulator
+D0B3HD	T77365	Adenosine A2a receptor	Antagonist
+D0XE1C	T77365	Adenosine A2a receptor	Modulator
+D0P1FO	T76685	Cannabinoid receptor 1	Agonist
+D0L7AS	T76685	Cannabinoid receptor 1	Inhibitor
+D0O3OS	T76685	Cannabinoid receptor 1	Antagonist
+D0E3SH	T68547	Histone deacetylase 1	Inhibitor
+D0L7LC	T68547	Histone deacetylase 1	Inhibitor
+D0E7PQ	T68547	Histone deacetylase 1	Inhibitor
+D00MDP	T68251	72 kDa type IV collagenase	Inhibitor
+D0Q4XQ	T64795	Voltage-dependent T-type calcium channel alpha-1G subunit	Blocker
+D08EOD	T64795	Voltage-dependent T-type calcium channel alpha-1G subunit	Blocker
+D09JBP	T64795	Voltage-dependent T-type calcium channel alpha-1G subunit	Blocker
+D0CQ0Z	T64795	Voltage-dependent T-type calcium channel alpha-1G subunit	Blocker
+D0U4VT	T64795	Voltage-dependent T-type calcium channel alpha-1G subunit	Blocker
+D0R0FE	T64795	Voltage-dependent T-type calcium channel alpha-1G subunit	Blocker
+D0R1CR	T62390	Tyrosine 3-monooxygenase	Binder
+D01CRB	T62390	Tyrosine 3-monooxygenase	Binder
+D0B3QM	T62390	Tyrosine 3-monooxygenase	Binder
+D0Q9YT	T62390	Tyrosine 3-monooxygenase	Cofactor
+D0P7JZ	T62193	Aromatic-L-amino-acid decarboxylase	Inhibitor
+D07MUN	T62193	Aromatic-L-amino-acid decarboxylase	Cofactor
+D0B2WJ	T60857	Aldo-keto reductase family 1 member C3	Inhibitor
+D09GOS	T56923	High affinity interleukin-8 receptor B	Modulator
+D0D1DI	T52522	Beta-2 adrenergic receptor	Agonist
+D07XYV	T52522	Beta-2 adrenergic receptor	Agonist
+D0X5NX	T52522	Beta-2 adrenergic receptor	Agonist
+D04XEG	T52522	Beta-2 adrenergic receptor	Agonist
+D04KJO	T52522	Beta-2 adrenergic receptor	Agonist
+D0FG6M	T52522	Beta-2 adrenergic receptor	Agonist
+D03DJL	T52522	Beta-2 adrenergic receptor	Agonist
+D08HUC	T52522	Beta-2 adrenergic receptor	Modulator
+D0I8FI	T52522	Beta-2 adrenergic receptor	Modulator
+D02ZJI	T52522	Beta-2 adrenergic receptor	Antagonist
+D02UFG	T52522	Beta-2 adrenergic receptor	Modulator
+D04UTT	T52522	Beta-2 adrenergic receptor	Modulator
+D0Y2MV	T52522	Beta-2 adrenergic receptor	Agonist
+D0SS4P	T52522	Beta-2 adrenergic receptor	Agonist
+D0Z1WA	T52522	Beta-2 adrenergic receptor	Agonist
+D00LFB	T52522	Beta-2 adrenergic receptor	Modulator
+D0K5CB	T52522	Beta-2 adrenergic receptor	Agonist
+D0L5YV	T52522	Beta-2 adrenergic receptor	Agonist
+D0M8RC	T52522	Beta-2 adrenergic receptor	Agonist
+D0L0GM	T52522	Beta-2 adrenergic receptor	Modulator
+D00MDP	T52450	Interstitial collagenase	Inhibitor
+D03ZTE	T51426	Bile acid receptor	Modulator
+D0G8BV	T51426	Bile acid receptor	Antagonist
+D0M4WA	T51426	Bile acid receptor	Modulator
+D0Y3TM	T49493	Hemoglobin	Activator
+D08OKJ	T49493	Hemoglobin	Activator
+D0S7WX	T46456	Retinoic acid receptor RXR-gamma	Binder
+D0R7WU	T46185	Muscarinic acetylcholine receptor M2	Inhibitor
+D05SJW	T46185	Muscarinic acetylcholine receptor M2	Antagonist
+D0S8IQ	T46185	Muscarinic acetylcholine receptor M2	Inhibitor
+D0M6VK	T46185	Muscarinic acetylcholine receptor M2	Antagonist
+D0B7YT	T46185	Muscarinic acetylcholine receptor M2	Antagonist
+D05KZK	T46185	Muscarinic acetylcholine receptor M2	Agonist
+D04KYY	T40954	Xanthine dehydrogenase/oxidase	Inhibitor
+D0A5SE	T40954	Xanthine dehydrogenase/oxidase	Inhibitor
+D0OR2L	T31479	Phospholipase A2	Inhibitor
+D0FL5V	T31479	Phospholipase A2	Inhibitor
+D00GOS	T31479	Phospholipase A2	Inducer
+D0G7KJ	T31479	Phospholipase A2	Inhibitor
+D00FGR	T31479	Phospholipase A2	Inhibitor
+D06IAQ	T30082	Acetylcholinesterase	Inhibitor
+D06IDT	T30082	Acetylcholinesterase	Inhibitor
+D0NS6H	T30082	Acetylcholinesterase	Modulator
+D0U8AT	T30082	Acetylcholinesterase	Modulator
+D0S5LH	T30082	Acetylcholinesterase	Inhibitor
+D0R9VR	T30082	Acetylcholinesterase	Inhibitor
+D06XWB	T30082	Acetylcholinesterase	Inhibitor
+D0B2OT	T30082	Acetylcholinesterase	Inhibitor
+D0K3LW	T30082	Acetylcholinesterase	Inhibitor
+D08USJ	T30082	Acetylcholinesterase	Inhibitor
+D0X7NU	T30082	Acetylcholinesterase	Modulator
+D0O2WB	T30082	Acetylcholinesterase	Inhibitor
+D0WY5Q	T30082	Acetylcholinesterase	Modulator
+D0E6YQ	T30082	Acetylcholinesterase	Inhibitor
+D00WVW	T30082	Acetylcholinesterase	Modulator
+D04ZBT	T23714	B2 bradykinin receptor	Antagonist
+D0X5ZI	T23499	Endothelin-1 receptor	Antagonist
+D0U4CE	T23499	Endothelin-1 receptor	Modulator
+D0S7JH	T23499	Endothelin-1 receptor	Modulator
+D06CGB	T22939	Progesterone receptor	Modulator
+D0F1UL	T22939	Progesterone receptor	Agonist
+D0R2KY	T22939	Progesterone receptor	Binder
+D02KIU	T22939	Progesterone receptor	Binder
+D0BA9U	T22939	Progesterone receptor	Binder
+D0I2SD	T22939	Progesterone receptor	Agonist
+D04GJN	T22939	Progesterone receptor	Binder
+D0GL7U	T22939	Progesterone receptor	Agonist
+D09QZI	T22939	Progesterone receptor	Agonist
+D0A9MR	T22939	Progesterone receptor	Agonist
+D07BSQ	T22939	Progesterone receptor	Agonist
+D0V4WD	T22939	Progesterone receptor	Modulator
+D0M8AB	T22285	Glutamate [NMDA] receptor subunit epsilon 1	Antagonist
+D0R6BI	T22118	Dopamine D1 receptor	Agonist
+D05AHE	T22118	Dopamine D1 receptor	Antagonist
+D04JCN	T22118	Dopamine D1 receptor	Modulator
+D0KS6W	T22118	Dopamine D1 receptor	Inhibitor
+D0Q5NX	T20178	Tumor necrosis factor	Inhibitor
+D0U7GK	T20178	Tumor necrosis factor	Inhibitor
+D0E6XR	T17980	Fyn tyrosine kinase	Inhibitor
+D0E6XR	T12499	Lck tyrosine kinase	Inhibitor
+D01AHO	T12475	Gonadotropin-releasing hormone receptor	Modulator
+D09OLZ	T12475	Gonadotropin-releasing hormone receptor	Antagonist
+D0Y7KH	T12475	Gonadotropin-releasing hormone receptor	Inhibitor
+D00RJJ	T12475	Gonadotropin-releasing hormone receptor	Antagonist
+D04ODH	T12475	Gonadotropin-releasing hormone receptor	Agonist
+D04ASH	T12475	Gonadotropin-releasing hormone receptor	Agonist
+D08WYM	T12475	Gonadotropin-releasing hormone receptor	Agonist
+D0Y9TS	T05849	Gastrin/cholecystokinin type B receptor	Agonist
+D0O5TQ	T05849	Gastrin/cholecystokinin type B receptor	Agonist
+D0D0YM	T01777	Alpha-2C adrenergic receptor	Modulator
+D0AE3X	T01777	Alpha-2C adrenergic receptor	Modulator
+D09NNH	T01777	Alpha-2C adrenergic receptor	Modulator
+D03DVJ	T01777	Alpha-2C adrenergic receptor	Modulator
+D05IHU	T01777	Alpha-2C adrenergic receptor	Modulator
+D06RCB	T00140	Arachidonate 5-lipoxygenase	Inhibitor
+D09JUG	T00140	Arachidonate 5-lipoxygenase	Inhibitor
+D0AN7B	T97613	Melatonin receptor	Binder
+D0U0KW	T97613	Melatonin receptor	Modulator
+D0Q5MQ	T97613	Melatonin receptor	Agonist
+D0U4CE	T92828	Endothelin B receptor	Modulator
+D0S7JH	T92828	Endothelin B receptor	Modulator
+D07WFK	T91480	Sulfonylurea receptor 1	Modulator
+D05LYX	T91480	Sulfonylurea receptor 1	Modulator
+D0M2MR	T91480	Sulfonylurea receptor 1	Blocker
+D0B2GI	T91480	Sulfonylurea receptor 1	Blocker
+D0N5YA	T91480	Sulfonylurea receptor 1	Blocker
+D06OIV	T91480	Sulfonylurea receptor 1	Blocker
+D05EJG	T89697	Indoleamine 2,3-dioxygenase	Binder
+D0C8UE	T89361	Cell division protein kinase 6	Inhibitor
+D00WCX	T86591	Peroxisome proliferator activated receptor alpha	Agonist
+D0EJ6O	T86591	Peroxisome proliferator activated receptor alpha	Agonist
+D07XGR	T86591	Peroxisome proliferator activated receptor alpha	Agonist
+D0C8UE	T85799	Cell division protein kinase 4	Inhibitor
+D08FJL	T84486	Oxytocin receptor	Agonist
+D0M3FJ	T84486	Oxytocin receptor	Modulator
+D07TGY	T83011	Amine oxidase [flavin-containing] B	Modulator
+D0R0UJ	T83011	Amine oxidase [flavin-containing] B	Inhibitor
+D0P9AC	T83011	Amine oxidase [flavin-containing] B	Inhibitor
+D06OMW	T83011	Amine oxidase [flavin-containing] B	Inhibitor
+D0TV6I	T83011	Amine oxidase [flavin-containing] B	Inhibitor
+D0S2UG	T83011	Amine oxidase [flavin-containing] B	Inhibitor
+D0J2MJ	T83011	Amine oxidase [flavin-containing] B	Modulator
+D0H0HJ	T83011	Amine oxidase [flavin-containing] B	Inhibitor
+D06LOQ	T80896	Estrogen receptor beta	Inhibitor
+D0T0LU	T80896	Estrogen receptor beta	Antagonist
+D02CRG	T80896	Estrogen receptor beta	Antagonist
+D03XOC	T80896	Estrogen receptor beta	Modulator
+D0ZJ1C	T77913	Histamine H1 receptor	Antagonist
+D06EQP	T77913	Histamine H1 receptor	Antagonist
+D0O4EU	T77913	Histamine H1 receptor	Antagonist
+D0O7JW	T77913	Histamine H1 receptor	Antagonist
+D06FZX	T77913	Histamine H1 receptor	Antagonist
+D0N7AD	T77913	Histamine H1 receptor	Antagonist
+D00JVR	T77913	Histamine H1 receptor	Antagonist
+D0U5VZ	T77913	Histamine H1 receptor	Antagonist
+D0Y5GK	T77913	Histamine H1 receptor	Antagonist
+D08VXO	T77913	Histamine H1 receptor	Antagonist
+D03XSJ	T77913	Histamine H1 receptor	Antagonist
+D00FGV	T77913	Histamine H1 receptor	Antagonist
+D0DK8V	T77913	Histamine H1 receptor	Antagonist
+D0EC6Q	T77913	Histamine H1 receptor	Antagonist
+D0B7NG	T77913	Histamine H1 receptor	Antagonist
+D0Q3YO	T77913	Histamine H1 receptor	Antagonist
+D0C5XC	T77913	Histamine H1 receptor	Antagonist
+D08HRJ	T77913	Histamine H1 receptor	Antagonist
+D00TLN	T77913	Histamine H1 receptor	Antagonist
+D01GBY	T77913	Histamine H1 receptor	Antagonist
+D02WIW	T77913	Histamine H1 receptor	Antagonist
+D05ZGQ	T77913	Histamine H1 receptor	Modulator
+D0U8UV	T77913	Histamine H1 receptor	Antagonist
+D08CTT	T77913	Histamine H1 receptor	Antagonist
+D01FGR	T77913	Histamine H1 receptor	Antagonist
+D0W6DY	T77913	Histamine H1 receptor	Antagonist
+D06FES	T77913	Histamine H1 receptor	Inhibitor
+D0Y2LR	T77913	Histamine H1 receptor	Antagonist
+D02XJI	T77913	Histamine H1 receptor	Antagonist
+D0DV3O	T77913	Histamine H1 receptor	Antagonist
+D04USC	T77913	Histamine H1 receptor	Agonist
+D0Q0RC	T77913	Histamine H1 receptor	Modulator
+D01KPV	T77913	Histamine H1 receptor	Antagonist
+D0O6SX	T77913	Histamine H1 receptor	Antagonist
+D0YG7M	T77913	Histamine H1 receptor	Antagonist
+D08SEI	T77913	Histamine H1 receptor	Antagonist
+D0M8PW	T77913	Histamine H1 receptor	Antagonist
+D06ABF	T77913	Histamine H1 receptor	Antagonist
+D08JZS	T77913	Histamine H1 receptor	Antagonist
+D01NJI	T77913	Histamine H1 receptor	Antagonist
+D09IMS	T77913	Histamine H1 receptor	Antagonist
+D0LR0R	T77913	Histamine H1 receptor	Antagonist
+D06MAJ	T77913	Histamine H1 receptor	Antagonist
+D05GPO	T77913	Histamine H1 receptor	Antagonist
+D0AJ5L	T77913	Histamine H1 receptor	Antagonist
+D0K5LQ	T77913	Histamine H1 receptor	Antagonist
+D06UDO	T77913	Histamine H1 receptor	Antagonist
+D04OBB	T77913	Histamine H1 receptor	Antagonist
+D0T2XU	T77913	Histamine H1 receptor	Antagonist
+D0R9ZB	T77913	Histamine H1 receptor	Antagonist
+D03GFW	T77913	Histamine H1 receptor	Antagonist
+D0E6OC	T77913	Histamine H1 receptor	Antagonist
+D08HZL	T77913	Histamine H1 receptor	Antagonist
+D0B4JQ	T77913	Histamine H1 receptor	Antagonist
+D0E8CI	T77913	Histamine H1 receptor	Antagonist
+D0X7IF	T75888	Carnitine O-palmitoyltransferase I	Activator
+D00SBN	T75888	Carnitine O-palmitoyltransferase I	Inhibitor
+D0K3QS	T75243	Serine/threonine-protein kinase mTOR	Inhibitor
+D0T6DK	T75243	Serine/threonine-protein kinase mTOR	Inhibitor
+D03LJR	T75243	Serine/threonine-protein kinase mTOR	Inhibitor
+D0ES1Q	T75243	Serine/threonine-protein kinase mTOR	Inhibitor
+D0V7WS	T75243	Serine/threonine-protein kinase mTOR	Modulator
+D0H2UB	T68334	Follicle stimulating hormone receptor	Antagonist
+D02SBQ	T68334	Follicle stimulating hormone receptor	Binder
+D03EDQ	T66505	smoothened receptor	Modulator
+D0VU2X	T66237	Vasopressin V2 receptor	Modulator
+D0N9GI	T66237	Vasopressin V2 receptor	Agonist
+D0F4NS	T66237	Vasopressin V2 receptor	Inhibitor
+D0IW7O	T66237	Vasopressin V2 receptor	Antagonist
+D03KZM	T66237	Vasopressin V2 receptor	Antagonist
+D0N4OW	T66237	Vasopressin V2 receptor	Agonist
+D01BYB	T63505	Proto-oncogene c-Abl	Inhibitor
+D0OB0F	T63505	Proto-oncogene c-Abl	Inhibitor
+D0E6XR	T63505	Proto-oncogene c-Abl	Inhibitor
+D0AZ3C	T63505	Proto-oncogene c-Abl	Inhibitor
+D00STL	T63505	Proto-oncogene c-Abl	Modulator
+D0H0EQ	T63505	Proto-oncogene c-Abl	Modulator
+D0BD8D	T59679	5-hydroxytryptamine 4 receptor	Agonist
+D0O2YE	T59679	5-hydroxytryptamine 4 receptor	Agonist
+D04QSJ	T59679	5-hydroxytryptamine 4 receptor	Agonist
+D00XWD	T59679	5-hydroxytryptamine 4 receptor	Agonist
+D08VRX	T59604	Growth hormone secretagogue receptor type 1	Agonist
+D02NEH	T59604	Growth hormone secretagogue receptor type 1	Modulator
+D0X9RG	T58992	Delta-type opioid receptor	Agonist
+D03DIG	T58992	Delta-type opioid receptor	Agonist
+D09ZXR	T58992	Delta-type opioid receptor	Modulator
+D04JHN	T58992	Delta-type opioid receptor	Binder
+D0CS2F	T58992	Delta-type opioid receptor	Binder
+D03SKD	T58992	Delta-type opioid receptor	Agonist
+D05CEU	T54644	Voltage-dependent T-type calcium channel subunit alpha-1H	Blocker
+D02FLB	T54644	Voltage-dependent T-type calcium channel subunit alpha-1H	Blocker
+D0M2YE	T53024	Somatostatin receptor type 2	Modulator
+D0V1SB	T53024	Somatostatin receptor type 2	Binder
+D02XIY	T53024	Somatostatin receptor type 2	Binder
+D0TV0C	T53024	Somatostatin receptor type 2	Inhibitor
+D02CKX	T51120	Thyroid peroxidase	Inhibitor
+D0S4BR	T51120	Thyroid peroxidase	Inhibitor
+D00MIN	T51120	Thyroid peroxidase	Inhibitor
+D0R7WU	T50918	Muscarinic acetylcholine receptor M5	Inhibitor
+D05ZJG	T50918	Muscarinic acetylcholine receptor M5	Modulator
+D07CNL	T50918	Muscarinic acetylcholine receptor M5	Binder
+D0RG3O	T50918	Muscarinic acetylcholine receptor M5	Antagonist
+D07ZTO	T50918	Muscarinic acetylcholine receptor M5	Agonist
+D02KIE	T50918	Muscarinic acetylcholine receptor M5	Modulator
+D0B1EV	T50918	Muscarinic acetylcholine receptor M5	Antagonist
+D0ND2J	T50918	Muscarinic acetylcholine receptor M5	Antagonist
+D0O5SZ	T50918	Muscarinic acetylcholine receptor M5	Antagonist
+D0RD5W	T50918	Muscarinic acetylcholine receptor M5	Antagonist
+D0VU8Q	T50918	Muscarinic acetylcholine receptor M5	Antagonist
+D0FV3V	T50918	Muscarinic acetylcholine receptor M5	Antagonist
+D0JY5S	T50918	Muscarinic acetylcholine receptor M5	Antagonist
+D0D4IH	T50918	Muscarinic acetylcholine receptor M5	Modulator
+D0H5DU	T50918	Muscarinic acetylcholine receptor M5	Binder
+D06HLY	T50918	Muscarinic acetylcholine receptor M5	Agonist
+D0R1WR	T50918	Muscarinic acetylcholine receptor M5	Antagonist
+D00NAX	T50918	Muscarinic acetylcholine receptor M5	Binder
+D0OK5I	T50918	Muscarinic acetylcholine receptor M5	Binder
+D05TIB	T50918	Muscarinic acetylcholine receptor M5	Antagonist
+D00SLY	T50918	Muscarinic acetylcholine receptor M5	Modulator
+D0J4JM	T48873	Synaptic vesicle amine transporter	Blocker
+D09PJX	T48873	Synaptic vesicle amine transporter	Blocker
+D0V3GA	T40800	Sodium/potassium-transporting ATPase alpha-1 chain	Modulator
+D0D9NA	T40800	Sodium/potassium-transporting ATPase alpha-1 chain	Binder
+D0V8TQ	T40800	Sodium/potassium-transporting ATPase alpha-1 chain	Binder
+D07NAJ	T40800	Sodium/potassium-transporting ATPase alpha-1 chain	Blocker
+D07TGN	T40800	Sodium/potassium-transporting ATPase alpha-1 chain	Binder
+D06MQM	T40800	Sodium/potassium-transporting ATPase alpha-1 chain	Binder
+D0AR3J	T40800	Sodium/potassium-transporting ATPase alpha-1 chain	Binder
+D0IQ6P	T40474	Hepatocyte growth factor receptor	Inhibitor
+D03ZBT	T40474	Hepatocyte growth factor receptor	Modulator
+D0L7AS	T37693	Cannabinoid receptor 2	Inhibitor
+D0VA0I	T36483	Thrombin receptor	Antagonist
+D00YVF	T36075	Glucagon-like peptide 1 receptor	Binder
+D03GOI	T36075	Glucagon-like peptide 1 receptor	Agonist
+D05MKA	T36075	Glucagon-like peptide 1 receptor	Modulator
+D0C4AM	T36075	Glucagon-like peptide 1 receptor	Agonist
+D0Q9EV	T35640	Lymphocyte function-associated antigen 1	Modulator
+D02DPU	T32060	5-hydroxytryptamine 2A receptor	Inhibitor
+D0S9CB	T32060	5-hydroxytryptamine 2A receptor	Modulator
+D0M8VE	T32060	5-hydroxytryptamine 2A receptor	Antagonist
+D01QGX	T32060	5-hydroxytryptamine 2A receptor	Modulator
+D0J8JP	T32060	5-hydroxytryptamine 2A receptor	Modulator
+D0G6VL	T32060	5-hydroxytryptamine 2A receptor	Antagonist
+D0T6QX	T32060	5-hydroxytryptamine 2A receptor	Inhibitor
+D01OUE	T30985	Histamine H2 receptor	Antagonist
+D02DPA	T30985	Histamine H2 receptor	Antagonist
+D0K0OZ	T30985	Histamine H2 receptor	Antagonist
+D0Q9DK	T30985	Histamine H2 receptor	Antagonist
+D0B8WN	T30985	Histamine H2 receptor	Antagonist
+D0R7WU	T28893	Muscarinic acetylcholine receptor M1	Inhibitor
+D0HQ6N	T28893	Muscarinic acetylcholine receptor M1	Antagonist
+D0B4TN	T28893	Muscarinic acetylcholine receptor M1	Antagonist
+D0Q1BT	T28893	Muscarinic acetylcholine receptor M1	Antagonist
+D02LRQ	T28893	Muscarinic acetylcholine receptor M1	Binder
+D07XJM	T28893	Muscarinic acetylcholine receptor M1	Antagonist
+D0OK5Q	T28893	Muscarinic acetylcholine receptor M1	Modulator
+D00BLL	T28893	Muscarinic acetylcholine receptor M1	Modulator
+D0M0AM	T28893	Muscarinic acetylcholine receptor M1	Antagonist
+D08TRD	T28893	Muscarinic acetylcholine receptor M1	Modulator
+D0NF0W	T28893	Muscarinic acetylcholine receptor M1	Modulator
+D0D1MA	T28893	Muscarinic acetylcholine receptor M1	Antagonist
+D0T0LM	T28893	Muscarinic acetylcholine receptor M1	Antagonist
+D0V5ZZ	T28893	Muscarinic acetylcholine receptor M1	Antagonist
+D05KZK	T28893	Muscarinic acetylcholine receptor M1	Agonist
+D09GFL	T28893	Muscarinic acetylcholine receptor M1	Antagonist
+D0B7OD	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D0Y5UG	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D0X4ZR	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D06CDO	T27812	Sodium-dependent serotonin transporter	Modulator
+D0Y5DO	T27812	Sodium-dependent serotonin transporter	Modulator
+D0ZS8P	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D04XPW	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D0O3FG	T27812	Sodium-dependent serotonin transporter	Modulator
+D02FUY	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D01AXB	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D08RBC	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D0TR5X	T27812	Sodium-dependent serotonin transporter	Modulator
+D03HFG	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D02XOK	T27812	Sodium-dependent serotonin transporter	Modulator
+D0M5JI	T27812	Sodium-dependent serotonin transporter	Modulator
+D04WFD	T27812	Sodium-dependent serotonin transporter	Modulator
+D06GDY	T27812	Sodium-dependent serotonin transporter	Modulator
+D06VML	T27812	Sodium-dependent serotonin transporter	Modulator
+D0K0TC	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D08KVZ	T27812	Sodium-dependent serotonin transporter	Modulator
+D06CVT	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D00USF	T27812	Sodium-dependent serotonin transporter	Modulator
+D0U9NY	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D0P1UX	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D0X6BV	T27812	Sodium-dependent serotonin transporter	Modulator
+D03WEX	T27812	Sodium-dependent serotonin transporter	Inhibitor
+D07HOB	T27325	DNA topoisomerase I	Modulator
+D0Z4XW	T27325	DNA topoisomerase I	Inhibitor
+D02PMO	T27325	DNA topoisomerase I	Modulator
+D03KOZ	T26623	Aldose reductase	Inhibitor
+D0Z5IU	T26623	Aldose reductase	Inhibitor
+D09KTS	T25005	Tyrosine-protein kinase BTK	Inhibitor
+D0Z1RV	T24983	D(4) dopamine receptor	Modulator
+D0KS6W	T24983	D(4) dopamine receptor	Inhibitor
+D0EG1I	T23172	Tyrosine-protein kinase JAK3	Modulator
+D0B7OD	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D0Y5UG	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D09IOI	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D04CRN	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D0X4ZR	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D04XPW	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D01UTL	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D03CEF	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D02FUY	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D01AXB	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D06ZUK	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D08TIQ	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D02JIS	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D02XOK	T21945	Sodium-dependent noradrenaline transporter	Modulator
+D03KQF	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D0H8QL	T21945	Sodium-dependent noradrenaline transporter	Modulator
+D09VGC	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D0M2MC	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D0U0RZ	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D00MYQ	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D0N8FQ	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D08KVZ	T21945	Sodium-dependent noradrenaline transporter	Modulator
+D0K4MH	T21945	Sodium-dependent noradrenaline transporter	Modulator
+D00HZV	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D0U9NY	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D0P1UX	T21945	Sodium-dependent noradrenaline transporter	Inhibitor
+D0L0ZF	T20251	Potassium voltage-gated channel subfamily H member 2	Inhibitor
+D05CPV	T17569	Potassium voltage-gated channel subfamily A member 5	Blocker
+D0J8IJ	T14908	Ceramide glucosyltransferase	Modulator
+D0HR8Z	T14908	Ceramide glucosyltransferase	Inhibitor
+D07UHS	T13852	Sphingosine 1-phosphate receptor 1	Modulator
+D0N0RU	T13726	Retinoic acid receptor RXR-alpha	Modulator
+D0E1SW	T13201	Carbonic anhydrase I	Modulator
+D0J4GO	T13201	Carbonic anhydrase I	Modulator
+D07INV	T13201	Carbonic anhydrase I	Modulator
+D0C2II	T13201	Carbonic anhydrase I	Modulator
+D0D7LA	T08922	Acetyl-CoA carboxylase 2	Activator
+D0Y5JC	T07663	CGMP-specific 3',5'-cyclic phosphodiesterase	Modulator
+D0F9GE	T07663	CGMP-specific 3',5'-cyclic phosphodiesterase	Modulator
+D0NJ3V	T07663	CGMP-specific 3',5'-cyclic phosphodiesterase	Inhibitor
+D08KTT	T07663	CGMP-specific 3',5'-cyclic phosphodiesterase	Inhibitor
+D05MQK	T07663	CGMP-specific 3',5'-cyclic phosphodiesterase	Inhibitor
+D01GUS	T07663	CGMP-specific 3',5'-cyclic phosphodiesterase	Inhibitor
+D0C9SY	T07663	CGMP-specific 3',5'-cyclic phosphodiesterase	Binder
+D06NVJ	T06273	Poly [ADP-ribose] polymerase-1	Binder
+D05XGO	T02551	D(3) dopamine receptor	Modulator
+D0G8NN	T02551	D(3) dopamine receptor	Modulator
+D0R9EQ	T02551	D(3) dopamine receptor	Modulator
+D0AT8C	T98913	Macrophage colony-stimulating factor receptor	Binder
+D04DKH	T92609	Alpha-1A adrenergic receptor	Inhibitor
+D0U0VU	T92609	Alpha-1A adrenergic receptor	Inhibitor
+D05MBZ	T92609	Alpha-1A adrenergic receptor	Modulator
+D0H1YQ	T92609	Alpha-1A adrenergic receptor	Antagonist
+D03YGR	T92076	Extracellular calcium-sensing receptor	Agonist
+D02STN	T89041	17 alpha-hydroxylase-C17, 20-lyase 	Modulator
+D06CNP	T89041	17 alpha-hydroxylase-C17, 20-lyase 	Modulator
+D09CGE	T87024	Amyloid beta A4 protein	Modulator
+D05LBU	T87023	Platelet-activating factor receptor	Modulator
+D04CSZ	T84040	Transient receptor potential cation channel subfamily A member 1	Activator
+D01JMC	T83813	5-hydroxytryptamine 2C receptor	Agonist
+D0O6GC	T83813	5-hydroxytryptamine 2C receptor	Antagonist
+D05ZIK	T83813	5-hydroxytryptamine 2C receptor	Antagonist
+D0X7DE	T83813	5-hydroxytryptamine 2C receptor	Antagonist
+D05GKD	T83813	5-hydroxytryptamine 2C receptor	Modulator
+D0P5AE	T82739	Plasma kallikrein	Inhibitor
+D0X5SJ	T82577	Angiotensin-converting enzyme	Modulator
+D0U3EC	T82577	Angiotensin-converting enzyme	Inhibitor
+D0I0EG	T82577	Angiotensin-converting enzyme	Inhibitor
+D04GKO	T82577	Angiotensin-converting enzyme	Inhibitor
+D0G8QW	T82577	Angiotensin-converting enzyme	Modulator
+D09HDR	T82577	Angiotensin-converting enzyme	Inhibitor
+D00SEB	T82577	Angiotensin-converting enzyme	Inhibitor
+D0N5HJ	T82577	Angiotensin-converting enzyme	Inhibitor
+D0X8KY	T82577	Angiotensin-converting enzyme	Inhibitor
+D0U4UQ	T82577	Angiotensin-converting enzyme	Modulator
+D07HGR	T82577	Angiotensin-converting enzyme	Inhibitor
+D00HDU	T82577	Angiotensin-converting enzyme	Inhibitor
+D03KYG	T82577	Angiotensin-converting enzyme	Inhibitor
+D0I7SZ	T82577	Angiotensin-converting enzyme	Inhibitor
+D01STB	T82577	Angiotensin-converting enzyme	Inhibitor
+D0G8NJ	T82577	Angiotensin-converting enzyme	Inhibitor
+D05MFG	T82577	Angiotensin-converting enzyme	Inhibitor
+D02DSZ	T82577	Angiotensin-converting enzyme	Modulator
+D0M5OC	T82577	Angiotensin-converting enzyme	Inhibitor
+D0G3PI	T82146	Retinoic acid receptor gamma	Modulator
+D0BM5G	T82146	Retinoic acid receptor gamma	Binder
+D03TPR	T79591	Thyroid hormone receptor alpha	Modulator
+D06RGG	T79591	Thyroid hormone receptor alpha	Antagonist
+D0S6JG	T79591	Thyroid hormone receptor alpha	Antagonist
+D0VU2X	T79232	Vasopressin V1a receptor	Modulator
+D0H3MG	T79232	Vasopressin V1a receptor	Agonist
+D0F4NS	T79232	Vasopressin V1a receptor	Inhibitor
+D0IW7O	T79232	Vasopressin V1a receptor	Antagonist
+D0P4VX	T79232	Vasopressin V1a receptor	Stimulator
+D0Y3KG	T76910	Glycogen synthase kinase-3	Inhibitor
+D0J1VY	T76904	Catechol-O-methyl-transferase	Inhibitor
+D0Y7PG	T76904	Catechol-O-methyl-transferase	Inhibitor
+D0I4DQ	T76198	Thromboxane A2 receptor	Modulator
+D0E3BH	T76198	Thromboxane A2 receptor	Binder
+D0E7FS	T75440	Peripheral-type benzodiazepine receptor	Agonist
+D01XOD	T75440	Peripheral-type benzodiazepine receptor	Inhibitor
+D0L9GG	T75440	Peripheral-type benzodiazepine receptor	Agonist
+D06BEP	T75440	Peripheral-type benzodiazepine receptor	Modulator
+D0S1OE	T75440	Peripheral-type benzodiazepine receptor	Agonist
+D0Q9WO	T75440	Peripheral-type benzodiazepine receptor	Binder
+D0P3JU	T75440	Peripheral-type benzodiazepine receptor	Modulator
+D0R4DP	T75440	Peripheral-type benzodiazepine receptor	Agonist
+D07JVL	T75440	Peripheral-type benzodiazepine receptor	Agonist
+D0P2CK	T75440	Peripheral-type benzodiazepine receptor	Agonist
+D06ZII	T75440	Peripheral-type benzodiazepine receptor	Agonist
+D06FWC	T75440	Peripheral-type benzodiazepine receptor	Agonist
+D0D5GD	T75440	Peripheral-type benzodiazepine receptor	Antagonist
+D0W2NM	T75440	Peripheral-type benzodiazepine receptor	Agonist
+D08XFV	T75440	Peripheral-type benzodiazepine receptor	Modulator
+D0Z9VB	T75440	Peripheral-type benzodiazepine receptor	Modulator
+D0E0OG	T75440	Peripheral-type benzodiazepine receptor	Modulator
+D0U6LM	T75440	Peripheral-type benzodiazepine receptor	Modulator
+D09LDR	T75440	Peripheral-type benzodiazepine receptor	Agonist
+D0G3AQ	T75440	Peripheral-type benzodiazepine receptor	Modulator
+D03NPH	T75440	Peripheral-type benzodiazepine receptor	Modulator
+D04BNP	T75440	Peripheral-type benzodiazepine receptor	Modulator
+D0U3LS	T75440	Peripheral-type benzodiazepine receptor	Modulator
+D01ZJK	T73476	Antithrombin-III	Modulator
+D0MX5S	T73476	Antithrombin-III	Modulator
+D05GGN	T73476	Antithrombin-III	Modulator
+D0UX6Z	T73476	Antithrombin-III	Modulator
+D00MDP	T73475	Matrilysin	Inhibitor
+D02CJX	T72168	Mineralocorticoid receptor	Modulator
+D0W5LS	T72168	Mineralocorticoid receptor	Binder
+D0Z4ZT	T72168	Mineralocorticoid receptor	Binder
+D0Q4SD	T72168	Mineralocorticoid receptor	Modulator
+D0R7JT	T72168	Mineralocorticoid receptor	Agonist
+D0EP0C	T72168	Mineralocorticoid receptor	Modulator
+D06PEB	T71192	Cysteinyl leukotriene receptor 1	Antagonist
+D00QET	T71192	Cysteinyl leukotriene receptor 1	Antagonist
+D08QIP	T71192	Cysteinyl leukotriene receptor 1	Antagonist
+D05DVP	T71192	Cysteinyl leukotriene receptor 1	Antagonist
+D0IX1A	T70967	Neuronal acetylcholine receptor protein, alpha-4 chain	Antagonist
+D0B6CC	T70967	Neuronal acetylcholine receptor protein, alpha-4 chain	Antagonist
+D02HWP	T60693	Kappa-type opioid receptor	Inhibitor
+D0P6VV	T60693	Kappa-type opioid receptor	Antagonist
+D01KQA	T60693	Kappa-type opioid receptor	Modulator
+D0T6DK	T60693	Kappa-type opioid receptor	Antagonist
+D0H8WF	T60182	Glucagon receptor	Binder
+D0W5HK	T59102	Beta platelet-derived growth factor receptor	Modulator
+D03LGY	T59045	4-aminobutyrate aminotransferase, mitochondrial	Inhibitor
+D09PUL	T59045	4-aminobutyrate aminotransferase, mitochondrial	Inhibitor
+D06JGH	T59045	4-aminobutyrate aminotransferase, mitochondrial	Inhibitor
+D0G4JI	T59045	4-aminobutyrate aminotransferase, mitochondrial	Inhibitor
+D0R3QY	T59045	4-aminobutyrate aminotransferase, mitochondrial	Inhibitor
+D0AZ3C	T57700	Mast/stem cell growth factor receptor	Inhibitor
+D0H0EQ	T57700	Mast/stem cell growth factor receptor	Modulator
+D09GDD	T57700	Mast/stem cell growth factor receptor	Modulator
+D0W5HK	T57700	Mast/stem cell growth factor receptor	Modulator
+D0U7BW	T55815	Neuronal acetylcholinereceptor subunit alpha-2	Antagonist
+D08DAE	T55815	Neuronal acetylcholinereceptor subunit alpha-2	Inhibitor
+D08ALK	T55815	Neuronal acetylcholinereceptor subunit alpha-2	Antagonist
+D04QWE	T55815	Neuronal acetylcholinereceptor subunit alpha-2	Antagonist
+D0OB2M	T55815	Neuronal acetylcholinereceptor subunit alpha-2	Antagonist
+D0XX6Y	T55815	Neuronal acetylcholinereceptor subunit alpha-2	Antagonist
+D0L5CZ	T55815	Neuronal acetylcholinereceptor subunit alpha-2	Antagonist
+D05HSC	T55815	Neuronal acetylcholinereceptor subunit alpha-2	Antagonist
+D0Z8HG	T55815	Neuronal acetylcholinereceptor subunit alpha-2	Antagonist
+D09VXM	T55654	cystic fibrosis transmembrane conductance regulator	Modulator
+D0W7WC	T55654	cystic fibrosis transmembrane conductance regulator	Modulator
+D09MWJ	T53381	Alpha-1D adrenergic receptor	Antagonist
+D0J5RN	T53381	Alpha-1D adrenergic receptor	Agonist
+D0S0AF	T53381	Alpha-1D adrenergic receptor	Modulator
+D03MIR	T53381	Alpha-1D adrenergic receptor	Antagonist
+D0D7QO	T53381	Alpha-1D adrenergic receptor	Modulator
+D0P9RF	T53381	Alpha-1D adrenergic receptor	Antagonist
+D0T4WA	T53381	Alpha-1D adrenergic receptor	Modulator
+D01MUR	T53378	Carbonic anhydrase IV	Modulator
+D0VD0C	T53378	Carbonic anhydrase IV	Inhibitor
+D0H8FH	T49526	Potassium voltage-gated channel subfamily KQT member 1	Blocker
+D0GU4K	T47094	Substance-P receptor	Antagonist
+D08WIN	T47094	Substance-P receptor	Antagonist
+D0CF0Y	T47094	Substance-P receptor	Antagonist
+D0KS6W	T46828	D(1B) dopamine receptor	Inhibitor
+D0OJ4L	T46482	Toll-like receptor 7	Antagonist
+D06CTE	T46482	Toll-like receptor 7	Agonist
+D0OR2L	T42822	Ferrochelatase	Inhibitor
+D0OL6O	T42822	Ferrochelatase	Activator
+D0J0ZS	T42446	Gamma-aminobutyric acid B receptor	Antagonist
+D0O5LA	T42446	Gamma-aminobutyric acid B receptor	Agonist
+D0R4ZT	T42000	Interleukin-1 beta	Inhibitor
+D07NSU	T42000	Interleukin-1 beta	Inhibitor
+D06FEA	T38529	Prostaglandin E2receptor, EP2 subtype	Antagonist
+D05ZTH	T38529	Prostaglandin E2receptor, EP2 subtype	Agonist
+D0N2EF	T38529	Prostaglandin E2receptor, EP2 subtype	Agonist
+D0W8SJ	T31204	5-hydroxytryptamine 2B receptor	Antagonist
+D05NOS	T31204	5-hydroxytryptamine 2B receptor	Antagonist
+D0J5DC	T28692	Lipoprotein lipase	Activator
+D05VIX	T28692	Lipoprotein lipase	Activator
+D02VJY	T25258	Multidrug resistance protein 1	Modulator
+D0Z5SM	T24836	Vitamin K-dependent protein C	Inhibitor
+D0R7WU	T20709	Muscarinic acetylcholine receptor M4	Inhibitor
+D0W9VB	T20709	Muscarinic acetylcholine receptor M4	Antagonist
+D0S8IQ	T20709	Muscarinic acetylcholine receptor M4	Inhibitor
+D09PNY	T20709	Muscarinic acetylcholine receptor M4	Antagonist
+D0Q8UR	T17345	DHFR	Modulator
+D0B6TW	T17345	DHFR	Modulator
+D0D3DU	T17345	DHFR	Modulator
+D0AO5H	T17345	DHFR	Modulator
+D0TV0C	T16633	Somatostatin receptor 1	Inhibitor
+D03ZFG	T16514	Fatty acid synthase	Inhibitor
+D0VF4H	T15569	Methylmalonyl-CoA mutase	Cofactor
+D0TV0C	T13644	Somatostatin receptor type 3	Inhibitor
+D06EMT	T13259	Succinate semialdehyde dehydrogenase, mitochondrial	Modulator
+D06VNK	T13259	Succinate semialdehyde dehydrogenase, mitochondrial	Inhibitor
+D0WD8M	T11448	Alpha-2A adrenergic receptor	Agonist
+D0Z3DY	T11288	Multidrug resistance-associated protein 1	Stimulator
+D03DEI	T11288	Multidrug resistance-associated protein 1	Modulator
+D0P0SM	T11072	5-hydroxytryptamine 1D receptor	Agonist
+D0O4CV	T11072	5-hydroxytryptamine 1D receptor	Modulator
+D02DMQ	T11072	5-hydroxytryptamine 1D receptor	Modulator
+D06FPQ	T11072	5-hydroxytryptamine 1D receptor	Modulator
+D0S9MU	T11072	5-hydroxytryptamine 1D receptor	Agonist
+D0Z6UC	T11072	5-hydroxytryptamine 1D receptor	Agonist
+D0NG7O	T11072	5-hydroxytryptamine 1D receptor	Modulator
+D0K0AT	T09909	Type-2 angiotensin II receptor	Inhibitor
+D0O4CV	T07806	5-hydroxytryptamine 1B receptor	Modulator
+D02DMQ	T07806	5-hydroxytryptamine 1B receptor	Modulator
+D0P5SA	T07806	5-hydroxytryptamine 1B receptor	Modulator
+D06FPQ	T07806	5-hydroxytryptamine 1B receptor	Modulator
+D0T3KI	T07806	5-hydroxytryptamine 1B receptor	Agonist
+D03NTJ	T07806	5-hydroxytryptamine 1B receptor	Modulator
+D0NG7O	T07806	5-hydroxytryptamine 1B receptor	Modulator
+D0S3WH	T01318	Dihydroorotate dehydrogenase, mitochondrial	Inhibitor
+D06ZEE	T01318	Dihydroorotate dehydrogenase, mitochondrial	Inhibitor
+D08ROP	T01318	Dihydroorotate dehydrogenase, mitochondrial	Inhibitor
+D03TPR	T98933	Thyroid hormone receptor beta-1	Modulator
+D07QCE	T97713	Inosine-5'-monophosphate dehydrogenase 1	Inhibitor
+D03UOT	T97035	Tyrosine oxidase	Inhibitor
+D0H6TP	T97035	Tyrosine oxidase	Inhibitor
+D0E9CD	T94444	Aldehyde oxidase	Inhibitor
+D03GET	T94444	Aldehyde oxidase	Inhibitor
+D0ZX1P	T84621	Cytochrome P450 11B1, mitochondrial	Inhibitor
+D0Q9JT	T84621	Cytochrome P450 11B1, mitochondrial	Inhibitor
+D0I3LE	T82841	insulin	Modulator
+D0QE5U	T82841	insulin	Modulator
+D07NGZ	T82841	insulin	Modulator
+D01IWS	T82841	insulin	Modulator
+D06QDR	T79961	Acetylcholine receptor	Modulator
+D0W2AN	T79961	Acetylcholine receptor	Modulator
+D0E8LT	T79961	Acetylcholine receptor	Modulator
+D07PCI	T75797	Prostaglandin F2-alpha receptor	Modulator
+D0C6NM	T75797	Prostaglandin F2-alpha receptor	Agonist
+D04LCQ	T75797	Prostaglandin F2-alpha receptor	Modulator
+D09CZA	T75797	Prostaglandin F2-alpha receptor	Agonist
+D07VDZ	T73495	Glutamate receptor, ionotropic kainate 1	Antagonist
+D0TV0C	T64830	Somatostatin receptor type 5	Inhibitor
+D06ACW	T63609	Adenylate cyclase type 1	Binder
+D07QFP	T61400	Dihydroorotate dehydrogenase	Modulator
+D0H0EQ	T60631	Proto-oncogene tyrosine-protein kinase receptor ret	Modulator
+D09GDD	T60631	Proto-oncogene tyrosine-protein kinase receptor ret	Modulator
+D0G6QF	T60631	Proto-oncogene tyrosine-protein kinase receptor ret	Inhibitor
+D0F4NS	T59881	Vasopressin V1b receptor	Inhibitor
+D0X7GL	T54132	Potassium voltage-gated channel subfamily KQT member 3	Modulator
+D06YYD	T51666	Potassium-transporting ATPase alpha chain 1	Inhibitor
+D0KL4J	T51666	Potassium-transporting ATPase alpha chain 1	Inhibitor
+D0U0KW	T48268	Melatonin receptor type 1B	Modulator
+D0Q5MQ	T48268	Melatonin receptor type 1B	Agonist
+D07NVU	T47107	Protein kinase C gamma type	Inhibitor
+D0WF7L	T46937	P2Y purinoceptor 12	Antagonist
+D09QBG	T46937	P2Y purinoceptor 12	Antagonist
+D0N0TZ	T46937	P2Y purinoceptor 12	Antagonist
+D0U5TL	T46937	P2Y purinoceptor 12	Antagonist
+D07IRF	T46937	P2Y purinoceptor 12	Inhibitor
+D0B9JO	T45262	Corticotropin releasing factor receptor 1	Antagonist
+D04CSZ	T41955	TRPM8 protein	Activator
+D02QCM	T32247	Calcitonin receptor	Modulator
+D0I1XG	T32247	Calcitonin receptor	Binder
+D06ULU	T31621	Heparin-binding growth factor 2	Modulator
+D0Q8ZX	T29303	Sodium channel	Blocker
+D06ORU	T29303	Sodium channel	Modulator
+D04MSM	T29303	Sodium channel	Modulator
+D04QZD	T29303	Sodium channel	Blocker
+D09QUQ	T29303	Sodium channel	Blocker
+D0L7VL	T29303	Sodium channel	Inhibitor
+D0WO8W	T29303	Sodium channel	Blocker
+D0H2SY	T29303	Sodium channel	Blocker
+D0L0MK	T29303	Sodium channel	Modulator
+D0K8MP	T29303	Sodium channel	Blocker
+D07ONP	T29303	Sodium channel	Blocker
+D0E4DW	T29303	Sodium channel	Blocker
+D0H7AV	T29303	Sodium channel	Modulator
+D0T7WL	T29303	Sodium channel	Modulator
+D0MD2L	T29303	Sodium channel	Blocker
+D09ZIS	T29303	Sodium channel	Blocker
+D0Z0MG	T25163	Carbamoyl-phosphate synthetase I	Activator
+D0M6DO	T23145	Cytochrome P450 11A1, mitochondrial	Inhibitor
+D0L2MX	T20401	Carbonic anhydrase II	Inhibitor
+D0M9WM	T20401	Carbonic anhydrase II	Inhibitor
+D03CNS	T20401	Carbonic anhydrase II	Inhibitor
+D05UYW	T20401	Carbonic anhydrase II	Inhibitor
+D0CK3G	T20401	Carbonic anhydrase II	Inhibitor
+D0VD0C	T20401	Carbonic anhydrase II	Inhibitor
+D0L9ZR	T19433	Glutathione S-transferase	Inhibitor
+D04NQI	T17448	Histamine N-methyltransferase	Inhibitor
+D07MGA	T16688	Diglyceride acyltransferase	Inhibitor
+D0CF2Q	T09538	Alkaline phosphatase, tissue-nonspecific	Inhibitor
+D02WCI	T97257	Transforming growth factor beta 1	Modulator
+D07QAR	T94309	Triacylglycerol lipase, pancreatic	Inhibitor
+D0T9TJ	T94309	Triacylglycerol lipase, pancreatic	Modulator
+D00HPK	T93344	Squalene monooxygenase	Inhibitor
+D02NTO	T93344	Squalene monooxygenase	Inhibitor
+D0AD5C	T92777	Maltase-glucoamylase, intestinal	Modulator
+D0D0ZD	T92777	Maltase-glucoamylase, intestinal	Inhibitor
+D04ZTY	T92777	Maltase-glucoamylase, intestinal	Inhibitor
+D04FBR	T89360	Inosine-5'-monophosphate dehydrogenase 2	Inhibitor
+D03TYI	T88975	CGMP-inhibited 3',5'-cyclic phosphodiesterase A	Inhibitor
+D0D1HW	T88975	CGMP-inhibited 3',5'-cyclic phosphodiesterase A	Inhibitor
+D0L0ZF	T88975	CGMP-inhibited 3',5'-cyclic phosphodiesterase A	Inhibitor
+D0B5FZ	T88240	Dihydropteroate synthetase	Inhibitor
+D0V4GY	T88240	Dihydropteroate synthetase	Breaker
+D0Q3BV	T88240	Dihydropteroate synthetase	Binder
+D0K7NQ	T88240	Dihydropteroate synthetase	Binder
+D05HPI	T88240	Dihydropteroate synthetase	Binder
+D03QWT	T88240	Dihydropteroate synthetase	Inhibitor
+D02IIW	T88240	Dihydropteroate synthetase	Inhibitor
+D0J7XL	T88240	Dihydropteroate synthetase	Binder
+D02IBU	T88240	Dihydropteroate synthetase	Inhibitor
+D09OOV	T88240	Dihydropteroate synthetase	Binder
+D08JCA	T88240	Dihydropteroate synthetase	Binder
+D0T1GT	T88240	Dihydropteroate synthetase	Inhibitor
+D05LKP	T88240	Dihydropteroate synthetase	Inhibitor
+D0N6TR	T88240	Dihydropteroate synthetase	Inhibitor
+D0H1GJ	T88240	Dihydropteroate synthetase	Inhibitor
+D0V9YR	T88240	Dihydropteroate synthetase	Inhibitor
+D07JJS	T88240	Dihydropteroate synthetase	Inhibitor
+D0R9OH	T88240	Dihydropteroate synthetase	Inhibitor
+D0L4JT	T88240	Dihydropteroate synthetase	Modulator
+D0D4CY	T88240	Dihydropteroate synthetase	Inhibitor
+D09TBD	T88240	Dihydropteroate synthetase	Inhibitor
+D0T1EO	T88240	Dihydropteroate synthetase	Binder
+D07PAO	T88240	Dihydropteroate synthetase	Binder
+D08JIV	T84316	Voltage-dependent calcium channel subunit alpha-2/delta-1	Blocker
+D0OB1J	T84316	Voltage-dependent calcium channel subunit alpha-2/delta-1	Blocker
+D0P6ZH	T84316	Voltage-dependent calcium channel subunit alpha-2/delta-1	Blocker
+D0A1DH	T84316	Voltage-dependent calcium channel subunit alpha-2/delta-1	Blocker
+D00WUF	T84316	Voltage-dependent calcium channel subunit alpha-2/delta-1	Modulator
+D0M1IO	T81900	Insulin-degrading Enzyme	Inhibitor
+D03VZH	T80387	Gamma-aminobutyric acid receptor subunit beta-2	Antagonist
+D07NVU	T74312	FL cytokine receptor	Inhibitor
+D0H0EQ	T74312	FL cytokine receptor	Modulator
+D0K1XK	T69619	Membrane copper amine oxidase	Modulator
+D00OVU	T69485	Orexin receptor type 2	Modulator
+D02PWM	T61744	CAMP-specific 3',5'-cyclic phosphodiesterase 4A	Inhibitor
+D09AMZ	T61744	CAMP-specific 3',5'-cyclic phosphodiesterase 4A	Inhibitor
+D0Z9NZ	T57392	Cytochrome P450 2D6	Inducer
+D0GC2M	T54128	Glutamate receptor AMPA subtype	Agonist
+D05TMQ	T54128	Glutamate receptor AMPA subtype	Binder
+D0WB9V	T54128	Glutamate receptor AMPA subtype	Agonist
+D0E3FD	T54128	Glutamate receptor AMPA subtype	Binder
+D0H4GN	T54128	Glutamate receptor AMPA subtype	Antagonist
+D0SP3D	T54128	Glutamate receptor AMPA subtype	Agonist
+D0AO9S	T54128	Glutamate receptor AMPA subtype	Suppressor
+D02EZM	T54128	Glutamate receptor AMPA subtype	Modulator
+D0D8VE	T54128	Glutamate receptor AMPA subtype	Antagonist
+D03WAJ	T54128	Glutamate receptor AMPA subtype	Antagonist
+D0DP6L	T54128	Glutamate receptor AMPA subtype	Agonist
+D0Q5IN	T54128	Glutamate receptor AMPA subtype	Antagonist
+D0W6ZF	T54128	Glutamate receptor AMPA subtype	Antagonist
+D0ZB7K	T54128	Glutamate receptor AMPA subtype	Binder
+D0R6BR	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D0E0WQ	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D0X5JS	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D0A4JK	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D05BQK	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D0O3AB	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D0P0KF	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D00AMQ	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D03VZH	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D00ETS	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D0Y4AW	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D0S8TD	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D07SOO	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D08UMH	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D05OQJ	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D0T5WK	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D0F0YZ	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D0KR9U	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D0U5RT	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D00SJE	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Antagonist
+D09DWL	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Modulator
+D0T1WN	T51487	Gamma-aminobutyric acid receptor subunit alpha-1	Modulator
+D09OBB	T46360	Sigma(1)-type opioid receptor	Agonist
+D0A0FL	T43739	Voltage-gated sodium channel subunit alpha Nav1.8	Modulator
+D0Q7ZG	T43739	Voltage-gated sodium channel subunit alpha Nav1.8	Modulator
+D09RHQ	T43739	Voltage-gated sodium channel subunit alpha Nav1.8	Modulator
+D08HQK	T43739	Voltage-gated sodium channel subunit alpha Nav1.8	Inhibitor
+D0Q2ES	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D0P5GE	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D0M4YC	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D04QLR	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D05EPM	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D0J5YC	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D08MRN	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D0K4CQ	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D07RGW	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D0X0RI	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D04VPA	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D06LYG	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D0C7ET	T39716	Sodium channel protein type 5 subunit alpha	Blocker
+D0F2XV	T33193	Penicillin binding protein 3	Binder
+D06QCC	T33193	Penicillin binding protein 3	Binder
+D05UBX	T33193	Penicillin binding protein 3	Binder
+D0K3DQ	T33193	Penicillin binding protein 3	Binder
+D0O5LU	T33193	Penicillin binding protein 3	Binder
+D00NJJ	T33193	Penicillin binding protein 3	Binder
+D04VXN	T33193	Penicillin binding protein 3	Modulator
+D05QDC	T29130	Signal transducer and activator of transcription 3	Inhibitor
+D0N8DP	T28722	GABA A receptor	Modulator
+D02YPG	T28722	GABA A receptor	Modulator
+D02KBD	T28722	GABA A receptor	Modulator
+D02OZY	T28722	GABA A receptor	Modulator
+D02XSA	T28722	GABA A receptor	Modulator
+D0W0MF	T28722	GABA A receptor	Modulator
+D06NSA	T28722	GABA A receptor	Modulator
+D0DZ3X	T25847	Peptidyl-prolyl cis-trans isomerase B	Binder
+D03GLH	T20514	Delta-aminolevulinic acid dehydratase	Inhibitor
+D0A3HB	T11754	Fatty-acid amide hydrolase	Inhibitor
+D00MYT	T11754	Fatty-acid amide hydrolase	Inhibitor
+D0RA5Q	T03691	Leukotriene A-4 hydrolase	Inhibitor
+D0H2DQ	T00494	ATP-binding cassette, sub-family A, member 1	Modulator
+D0V0LB	T95479	Somatostatin	Binder
+D0J7TM	T95400	High affinity immunoglobulin epsilon receptor	Binder
+D0C0SK	T83386	Folate receptor alpha	Modulator
+D0B8SV	T77195	NADH dehydrogenase	Binder
+D0L7VL	T76937	Voltage-gated sodium channel subunit alpha Nav1.3	Inhibitor
+D0S2IQ	T76213	Phenylalanine hydroxylase	Modulator
+D0T6DK	T76059	FK506-binding protein 1A	Binder
+D0AA2D	T73726	Fungal Cytochrome P450 51	Inhibitor
+D0N3SP	T73726	Fungal Cytochrome P450 51	Inhibitor
+D0EV8E	T73726	Fungal Cytochrome P450 51	Inhibitor
+D0G4BI	T73726	Fungal Cytochrome P450 51	Inhibitor
+D09LNI	T73726	Fungal Cytochrome P450 51	Modulator
+D0V4IB	T73726	Fungal Cytochrome P450 51	Modulator
+D0B4IF	T73726	Fungal Cytochrome P450 51	Inhibitor
+D0U4XJ	T73726	Fungal Cytochrome P450 51	Inhibitor
+D00AXJ	T73726	Fungal Cytochrome P450 51	Modulator
+D04GYO	T73726	Fungal Cytochrome P450 51	Inhibitor
+D07ABV	T73726	Fungal Cytochrome P450 51	Inhibitor
+D0O6UZ	T73726	Fungal Cytochrome P450 51	Inhibitor
+D01AQT	T73726	Fungal Cytochrome P450 51	Inhibitor
+D0CA6J	T73726	Fungal Cytochrome P450 51	Inhibitor
+D0N3VR	T73726	Fungal Cytochrome P450 51	Modulator
+D04AQH	T70449	Growth hormone-releasing hormone receptor	Binder
+D0UL9R	T70449	Growth hormone-releasing hormone receptor	Binder
+D0T1XW	T69506	Orphan nuclear receptor NR1I3	Modulator
+D0P0WV	T63934	Interferon alpha 2 ligand	Modulator
+D0OG5K	T63068	Serum albumin	Binder
+D0B1FE	T63068	Serum albumin	Binder
+D0P2CS	T63068	Serum albumin	Modulator
+D01OIL	T63068	Serum albumin	Binder
+D0H0WK	T63068	Serum albumin	Modulator
+D07OIX	T63068	Serum albumin	Binder
+D06ZPS	T63068	Serum albumin	Modulator
+D05ATI	T63068	Serum albumin	Binder
+D0YH0N	T62184	Sodium- and chloride-dependent GABA transporter 1	Modulator
+D0A0OO	T56915	HIV protease	Inhibitor
+D07IQS	T56915	HIV protease	Modulator
+D03IGH	T56915	HIV protease	Modulator
+D0F5MT	T56915	HIV protease	Inhibitor
+D0V7CF	T56915	HIV protease	Inhibitor
+D0ZU9R	T56915	HIV protease	Inhibitor
+D0WI3T	T56915	HIV protease	Inhibitor
+D0EV6T	T56915	HIV protease	Modulator
+D03ZBT	T56418	ALK tyrosine kinase receptor	Modulator
+D0KJ9P	T56418	ALK tyrosine kinase receptor	Modulator
+D05ZYM	T53103	Alpha-N-acetylglucosaminidase	Activator
+D09KLR	T52373	Farnesyl pyrophosphate synthase	Modulator
+D08SJZ	T52373	Farnesyl pyrophosphate synthase	Modulator
+D0VM2L	T52373	Farnesyl pyrophosphate synthase	Modulator
+D00NKB	T52173	Amiloride-sensitive sodium channel alpha-subunit	Blocker
+D00CTS	T50066	Chloride channel protein 2	Activator
+D0H8VY	T46628	Microsomal triglyceride transfer protein, large subunit	Inhibitor
+D02HSB	T43189	Tubulin	Inhibitor
+D09DHY	T43189	Tubulin	Binder
+D0O5WP	T43189	Tubulin	Inhibitor
+D0KK2E	T43189	Tubulin	Inhibitor
+D0W2EK	T43189	Tubulin	Stablizer
+D01HTL	T43189	Tubulin	Inhibitor
+D02GIU	T41201	Dehydropeptidase I	Inhibitor
+D0G3SH	T37046	Biliverdin reductase A	Activator
+D0VD0C	T31992	Carbonic anhydrase XIV	Inhibitor
+D09VAZ	T31992	Carbonic anhydrase XIV	Inhibitor
+D0O5NK	T31595	Neuraminidase	Inhibitor
+D0P2IW	T31595	Neuraminidase	Inhibitor
+D00NPP	T31595	Neuraminidase	Inhibitor
+D0NJ5H	T31391	Dipeptidyl peptidase IV	Inhibitor
+D0T8XB	T31391	Dipeptidyl peptidase IV	Modulator
+D05IPF	T31391	Dipeptidyl peptidase IV	Modulator
+D02EYG	T31391	Dipeptidyl peptidase IV	Inhibitor
+D0K9MY	T31391	Dipeptidyl peptidase IV	Inhibitor
+D0U2JP	T31391	Dipeptidyl peptidase IV	Inhibitor
+D0L3DK	T31391	Dipeptidyl peptidase IV	Inhibitor
+D0F8CM	T28076	Fibroblast growth factor-4	Modulator
+D0O3YF	T25464	Calcineurin	Inhibitor
+D0Z4UN	T25464	Calcineurin	Inhibitor
+D06OMK	T25464	Calcineurin	Inhibitor
+D00PEH	T16156	Thrombopoietin Receptor	Agonist
+D03PYO	T16156	Thrombopoietin Receptor	Agonist
+D08VSI	T16156	Thrombopoietin Receptor	Agonist
+D01PZD	T16156	Thrombopoietin Receptor	Modulator
+D0I1LH	T13999	Na-K-2Cl cotransporter	Blocker
+D0L9YX	T12966	Troponin C	Stimulator
+D0C4HG	T12966	Troponin C	Stimulator
+D05HFY	T11843	Vitamin K epoxide reductase complex subunit 1	Inhibitor
+D02TJS	T11843	Vitamin K epoxide reductase complex subunit 1	Inhibitor
+D08FTG	T11843	Vitamin K epoxide reductase complex subunit 1	Inhibitor
+D0QV5T	T11843	Vitamin K epoxide reductase complex subunit 1	Inhibitor
+D0E3OF	T11843	Vitamin K epoxide reductase complex subunit 1	Inhibitor
+D00BCP	T09423	ATP-sensitive inward rectifier potassium channel 10	Blocker
+D0Z4SB	T09423	ATP-sensitive inward rectifier potassium channel 10	Blocker
+D06HBQ	T09423	ATP-sensitive inward rectifier potassium channel 10	Binder
+D04NTJ	T09423	ATP-sensitive inward rectifier potassium channel 10	Blocker
+D03JAA	T09423	ATP-sensitive inward rectifier potassium channel 10	Binder
+D0P2YU	T09423	ATP-sensitive inward rectifier potassium channel 10	Blocker
+D09FJB	T09423	ATP-sensitive inward rectifier potassium channel 10	Blocker
+D0W6LI	T08898	Adrenocorticotropic hormone receptor	Antagonist
+D05BMG	T99524	Trace amine-associated receptor-1	Modulator
+D0T3LF	T99524	Trace amine-associated receptor-1	Modulator
+D0U5GS	T99524	Trace amine-associated receptor-1	Modulator
+D0W1RY	T99524	Trace amine-associated receptor-1	Modulator
+D00DEF	T99524	Trace amine-associated receptor-1	Modulator
+D02PAH	T93878	Solute carrier family 12 member 1	Blocker
+D0R7HO	T93878	Solute carrier family 12 member 1	Blocker
+D09NIA	T93878	Solute carrier family 12 member 1	Blocker
+D0W5UV	T93878	Solute carrier family 12 member 1	Modulator
+D06TNL	T93878	Solute carrier family 12 member 1	Blocker
+D0PQ3G	T93878	Solute carrier family 12 member 1	Blocker
+D00WAM	T93878	Solute carrier family 12 member 1	Blocker
+D03GVC	T93878	Solute carrier family 12 member 1	Blocker
+D0E9JM	T93878	Solute carrier family 12 member 1	Modulator
+D0J9XZ	T93878	Solute carrier family 12 member 1	Blocker
+D0Y2IZ	T93878	Solute carrier family 12 member 1	Blocker
+D0Y2DI	T89515	Dihydrofolate reductase	Inhibitor
+D0E3SF	T89515	Dihydrofolate reductase	Inhibitor
+D02LWU	T89515	Dihydrofolate reductase	Inhibitor
+D0P8RS	T89515	Dihydrofolate reductase	Inhibitor
+D0E0GV	T89515	Dihydrofolate reductase	Inhibitor
+D0Y7TS	T89515	Dihydrofolate reductase	Inhibitor
+D0X3ST	T85733	DNA topoisomerase II, beta isozyme	Inhibitor
+D02PAH	T84886	Solute carrier family 12 member 3	Blocker
+D01WLC	T84886	Solute carrier family 12 member 3	Blocker
+D06TNG	T84886	Solute carrier family 12 member 3	Blocker
+D0P0HB	T79068	Enoyl-[acyl-carrier-protein] reductase [NADH]	Inhibitor
+D09XQF	T79068	Enoyl-[acyl-carrier-protein] reductase [NADH]	Inhibitor
+D0L7UQ	T79068	Enoyl-[acyl-carrier-protein] reductase [NADH]	Inhibitor
+D0XF8W	T79068	Enoyl-[acyl-carrier-protein] reductase [NADH]	Inhibitor
+D02FLB	T74500	Potassiumvoltage-gated channel subfamily D member 3	Blocker
+D0CT4D	T73676	Synaptic vesicle glycoprotein 2A	Inhibitor
+D0E1XL	T73676	Synaptic vesicle glycoprotein 2A	Modulator
+D05GRY	T71230	Atrial natriuretic peptide receptor A	Binder
+D00HNB	T68461	Adenine nucleotide translocator 1	Inhibitor
+D0I0RJ	T55094	Acid-sensing ion channel ASIC1a/ASIC1b	Modulator
+D09ZIO	T50688	Glycoprotein IIb/IIIa receptor	Modulator
+D0BN9X	T50688	Glycoprotein IIb/IIIa receptor	Modulator
+D0DZ3X	T47081	Peptidyl-prolyl cis-trans isomerase A	Binder
+D00RCI	T34843	Glucagon-like peptide 2 receptor	Modulator
+D08IBS	T34743	DNA	Binder
+D02LPF	T34743	DNA	Breaker
+D0YA9Z	T34743	DNA	Binder
+D0PA2N	T34743	DNA	Binder
+D04CFW	T34743	DNA	Binder
+D00XHD	T34743	DNA	Inhibitor
+D06UVD	T34743	DNA	Breaker
+D02TBI	T34743	DNA	Binder
+D01ZEC	T34743	DNA	Binder
+D0PW7C	T34743	DNA	Binder
+D0X9ZC	T34743	DNA	Binder
+D06YHL	T34743	DNA	Binder
+D09KDN	T34743	DNA	Binder
+D0WS1X	T34743	DNA	Binder
+D0E3RW	T34743	DNA	Binder
+D06OVY	T34743	DNA	Binder
+D01BQC	T34743	DNA	Binder
+D0C2YB	T34743	DNA	Binder
+D06OUL	T34743	DNA	Binder
+D0AP9T	T34743	DNA	Binder
+D02VFC	T34743	DNA	Binder
+D02MZY	T34743	DNA	Binder
+D0W6CA	T34743	DNA	Binder
+D0YX4S	T34743	DNA	Binder
+D06KKS	T34743	DNA	Binder
+D0PH5Z	T34743	DNA	Binder
+D05JDR	T34743	DNA	Binder
+D0Y7BD	T34743	DNA	Binder
+D0Y2IE	T34743	DNA	Binder
+D0Z5EM	T34743	DNA	Binder
+D01DSP	T34743	DNA	Binder
+D0V8QT	T34743	DNA	Intercalator
+D0O1WX	T34743	DNA	Inhibitor
+D0R5RR	T34743	DNA	Binder
+D04KTZ	T34743	DNA	Binder
+D00HWO	T34743	DNA	Binder
+D0Y7ZU	T34743	DNA	Breaker
+D0P8IV	T34743	DNA	Breaker
+D0R2KJ	T34743	DNA	Binder
+D0JO3U	T34743	DNA	Modulator
+D0Q1MS	T34743	DNA	Binder
+D0Q2AT	T34743	DNA	Binder
+D09PZO	T34743	DNA	Binder
+D04JPJ	T34743	DNA	Inhibitor
+D0E9WL	T34743	DNA	Binder
+D03SSE	T34743	DNA	Intercalator
+D09UZO	T34743	DNA	Breaker
+D08SKH	T34743	DNA	Binder
+D06TQZ	T34743	DNA	Binder
+D0Y0GH	T34743	DNA	Binder
+D0A0JH	T34743	DNA	Binder
+D0B8UJ	T34743	DNA	Binder
+D0H0SJ	T34743	DNA	Modulator
+D0R0BX	T34743	DNA	Breaker
+D0MB8I	T34743	DNA	Binder
+D09CPR	T34743	DNA	Binder
+D04ZAH	T34743	DNA	Binder
+D03FNJ	T34743	DNA	Binder
+D0T8EH	T34743	DNA	Modulator
+D04KAQ	T34743	DNA	Binder
+D08HDY	T34743	DNA	Binder
+D08GSF	T34743	DNA	Binder
+D0I8RR	T34743	DNA	Breaker
+D02ZXM	T34743	DNA	Intercalator
+D08USU	T34743	DNA	Binder
+D0J9UN	T34743	DNA	Modulator
+D0Z4PE	T34743	DNA	Modulator
+D0H2MO	T34318	Cathelicidin antimicrobial peptide	Modulator
+D03DAP	T12819	E3 ubiquitin protein ligase COP1	Modulator
+D0U5SI	T12819	E3 ubiquitin protein ligase COP1	Modulator
+D0J2KV	T12819	E3 ubiquitin protein ligase COP1	Modulator
+D03DDR	T12819	E3 ubiquitin protein ligase COP1	Modulator
+D01PJR	T12819	E3 ubiquitin protein ligase COP1	Modulator
+D0I8CA	T10897	Acyl-CoA desaturase	Binder
+D00GNJ	T97947	Guanylyl cyclase C	Activator
+D06WKA	T97947	Guanylyl cyclase C	Activator
+D07FEC	T97947	Guanylyl cyclase C	Modulator
+D02KRS	T95678	Influenza A virus M2 protein	Inhibitor
+D0TQ1G	T95678	Influenza A virus M2 protein	Inhibitor
+D06TJJ	T70680	Organic anion transporter 1	Inhibitor
+D0L7FM	T70680	Organic anion transporter 1	Blocker
+D03ZBT	T69128	ROS1	Modulator
+D04AIT	T64410	D-alanyl-D-alanine carboxypeptidase	Inhibitor
+D01PLN	T64410	D-alanyl-D-alanine carboxypeptidase	Inhibitor
+D0D1HA	T64410	D-alanyl-D-alanine carboxypeptidase	Inhibitor
+D07JVS	T64410	D-alanyl-D-alanine carboxypeptidase	Binder
+D00CSQ	T53748	Enoyl-ACP reductase	Binder
+D07ESC	T47941	PDE4	Inhibitor
+D0C8UE	T47941	PDE4	Inhibitor
+D0B0SH	T47941	PDE4	Modulator
+D0R4UW	T47941	PDE4	Modulator
+D0O8JB	T46904	Secretin receptor	Binder
+D0X7JN	T38179	Beta-lactamase	Inhibitor
+D0QQ7D	T38179	Beta-lactamase	Inhibitor
+D0B5MP	T37847	DNA polymerase	Modulator
+D04AAW	T37847	DNA polymerase	Modulator
+D07XSN	T37847	DNA polymerase	Inhibitor
+D0OT0O	T37847	DNA polymerase	Inhibitor
+D05ARP	T37847	DNA polymerase	Inhibitor
+D07BYK	T37847	DNA polymerase	Inhibitor
+D04QJD	T37847	DNA polymerase	Inhibitor
+D05MFA	T37847	DNA polymerase	Modulator
+D06GWF	T37847	DNA polymerase	Inhibitor
+D09LWS	T33901	Niemann-Pick C1-like protein 1	Inhibitor
+D09UXE	T31751	1-deoxy-D-xylulose-5-phosphate reductoisomerase	Binder
+D02VMJ	T30372	Cruzipain	Inhibitor
+D08DFX	T30085	SLGT2	Modulator
+D01TNW	T30085	SLGT2	Modulator
+D06ALD	T30085	SLGT2	Modulator
+D03JSJ	T27445	Isoleucyl-tRNA synthetase (bacterial)	Modulator
+D00EEL	T27376	GABA A receptor delta subunit	Modulator
+D0I0DL	T22839	Elastase 1	Inhibitor
+D0O5WD	T14558	Tryptase	Inhibitor
+D05EAM	T14558	Tryptase	Inhibitor
+D0T6WN	T14342	HIV-1 reverse transcriptase	Inhibitor
+D03TGJ	T14342	HIV-1 reverse transcriptase	Modulator
+D02WFK	T12187	D-alanine-D-alanine ligase A	Inhibitor
+D00NNC	T10147	Receptor-type protein-tyrosine phosphatase S	Inhibitor
+D0V1UW	T07137	4-hydroxyphenylpyruvate dioxygenase	Inhibitor
+D0B2GI	T02777	SUR2-type K(ATP) channel	Blocker
+D0O2SR	T02777	SUR2-type K(ATP) channel	Activator
+D0N5YA	T02777	SUR2-type K(ATP) channel	Blocker
+D06OIV	T02777	SUR2-type K(ATP) channel	Blocker
+D0YA2L	T98708	Parathyroid hormone ligand	Modulator
+D0F1EX	T88452	Corticosteroid-binding globulin	Binder
+D0K7HU	T88452	Corticosteroid-binding globulin	Binder
+D03IKT	T88452	Corticosteroid-binding globulin	Binder
+D02VIT	T86674	Hemagglutinin	Inhibitor
+D04CRL	T83611	HLA class II histocompatibility antigen, DRB1-1	Binder
+D0F9BY	T73189	Fungal 1,3-beta-glucan synthase	Modulator
+D00ZCN	T73189	Fungal 1,3-beta-glucan synthase	Modulator
+D06TOE	T73189	Fungal 1,3-beta-glucan synthase	Modulator
+D0M1VC	T66040	Penicillin binding protein 2	Inhibitor
+D0A1CB	T66040	Penicillin binding protein 2	Modulator
+D0H3TD	T66040	Penicillin binding protein 2	Binder
+D0R5RR	T62553	Ribonucleoside-diphosphate reductase	Inhibitor
+D07YDE	T57680	Soluble guanylate cyclase	Modulator
+D07XVR	T57680	Soluble guanylate cyclase	Modulator
+D00TRV	T40696	Topoisomerase IV	Modulator
+D03IHU	T40696	Topoisomerase IV	Modulator
+D01IXD	T40696	Topoisomerase IV	Modulator
+D03CQE	T40696	Topoisomerase IV	Modulator
+D0VR7W	T40696	Topoisomerase IV	Modulator
+D02RSN	T40696	Topoisomerase IV	Modulator
+D0ZV0Z	T40696	Topoisomerase IV	Modulator
+D0K6GZ	T40696	Topoisomerase IV	Modulator
+D00YZD	T39087	HIV integrase	Modulator
+D0QD1G	T39087	HIV integrase	Modulator
+D0I1FQ	T39087	HIV integrase	Modulator
+D0M4VM	T34287	Mannose-6-phosphate isomerase	Inhibitor
+D0PI2E	T34287	Mannose-6-phosphate isomerase	Inhibitor
+D01GYT	T24634	UDP-N-acetylglucosamine 1-carboxyvinyltransferase	Inhibitor
+D00MIN	T16792	Type I iodothyronine deiodinase	Inhibitor
+D0L7VL	T13491	Equilibrative nucleoside transporter 1	Inhibitor
+D09VXM	T05089	calcium activated channel anoctamin 1	Modulator
+D08HZC	T93783	HIV-1 Tat protein	Inhibitor
+D0X7XG	T84972	Elongation factor G	Inhibitor
+D0S1ZB	T84581	Thioredoxin reductase, cytoplasmic	Inhibitor
+D05BJD	T77009	Thioredoxin reductase	Modulator
+D06PQT	T71690	Pyruvate decarboxylase	Cofactor
+D0X9RY	T66350	Ras-related protein Rab-9A	Inhibitor
+D0X5SD	T65291	Aldehyde dehydrogenase	Inhibitor
+D06HZY	T59720	Bis(5'-adenosyl)-triphosphatase	Inhibitor
+D0KR2J	T56518	DNA polymerase/reverse transcriptase	Modulator
+D08EBN	T38052	Pyruvate:ferredoxin oxidoreductase	Modulator
+D03FLC	T35135	Voltage-gated sodium channel	Blocker
+D0X4RN	T35135	Voltage-gated sodium channel	Blocker
+D0QL3P	T35135	Voltage-gated sodium channel	Blocker
+D0H0KB	T35135	Voltage-gated sodium channel	Blocker
+D0X0WU	T35135	Voltage-gated sodium channel	Modulator
+D0Q4TK	T31230	Fumarate reductase flavoprotein subunit	Inhibitor
+D08PCE	T31230	Fumarate reductase flavoprotein subunit	Inhibitor
+D08QCJ	T31230	Fumarate reductase flavoprotein subunit	Inhibitor
+D0R9BG	T28869	Urease	Inhibitor
+D00TRV	T22348	Bacterial DNA gyrase	Modulator
+D03IHU	T22348	Bacterial DNA gyrase	Modulator
+D01IXD	T22348	Bacterial DNA gyrase	Modulator
+D03CQE	T22348	Bacterial DNA gyrase	Modulator
+D0VR7W	T22348	Bacterial DNA gyrase	Modulator
+D0JL2K	T22348	Bacterial DNA gyrase	Modulator
+D02RSN	T22348	Bacterial DNA gyrase	Modulator
+D0ZV0Z	T22348	Bacterial DNA gyrase	Modulator
+D0Q2PE	T22348	Bacterial DNA gyrase	Modulator
+D03NHW	T22348	Bacterial DNA gyrase	Modulator
+D0K6GZ	T22348	Bacterial DNA gyrase	Modulator
+D03WPA	T22348	Bacterial DNA gyrase	Modulator
+D0G3SH	T08378	Sodium-dependent vitamin C transporter 2	Activator
+D06GBQ	T06770	Transmembrane glycoprotein gp41	Modulator
+D0C6DT	T92687	H+ K+ ATPase	Modulator
+D0M4HV	T92687	H+ K+ ATPase	Modulator
+D01XNB	T92687	H+ K+ ATPase	Modulator
+D0T6XX	T92687	H+ K+ ATPase	Modulator
+D05OFX	T92078	Dihydropyrimidinase related protein 2	Modulator
+D0B4DC	T78173	Fungal squalene epoxidase	Modulator
+D01AYJ	T78173	Fungal squalene epoxidase	Modulator
+D0HF0W	T74166	Nicotinic acetylcholine receptor alpha3/beta4	Modulator
+D0Y3MO	T72657	30S ribosomal subunit	Binder
+D02GAC	T72657	30S ribosomal subunit	Binder
+D0R9WP	T72657	30S ribosomal subunit	Binder
+D05JNI	T72657	30S ribosomal subunit	Binder
+D0YV1Q	T72657	30S ribosomal subunit	Binder
+D04VEJ	T72657	30S ribosomal subunit	Binder
+D07JHH	T72657	30S ribosomal subunit	Binder
+D0H1AR	T72657	30S ribosomal subunit	Binder
+D08LTU	T72657	30S ribosomal subunit	Binder
+D0RD0N	T72657	30S ribosomal subunit	Binder
+D07JZF	T72657	30S ribosomal subunit	Binder
+D0J2NK	T72657	30S ribosomal subunit	Binder
+D04NDM	T72657	30S ribosomal subunit	Binder
+D05AFR	T72657	30S ribosomal subunit	Binder
+D02PCR	T72657	30S ribosomal subunit	Binder
+D0N0EQ	T72657	30S ribosomal subunit	Binder
+D08NQZ	T72657	30S ribosomal subunit	Binder
+D0G4OD	T72657	30S ribosomal subunit	Binder
+D0CL9S	T71501	HBV polymerase	Inhibitor
+D0C1SF	T71484	Human keratin	Inducer
+D05VGL	T67282	Fungal aureus leucyl-tRNA synthetase	Inhibitor
+D02NJA	T65570	Alcohol dehydrogenase 1A	Modulator
+D0Y6CE	T63967	Nicotinic ACh receptor alpha 4/beta 2	Modulator
+D0LM4A	T63967	Nicotinic ACh receptor alpha 4/beta 2	Modulator
+D0E2OU	T63140	Integral membrane protein LmrP	Modulator
+D05KBU	T62905	Sodium-dependent multivitamin transporter	Modulator
+D02ZTJ	T56556	5-aminoimidazole-4-carboxamidoribonucleotide (AICAR) transformylase	Inhibitor
+D08KBK	T53601	Bacteria 50S ribosomal subunit	Modulator
+D0RE6T	T51593	Tryptophan hydroxylase	Modulator
+D06TJJ	T35445	Mothers against decapentaplegic homolog 3	Inhibitor
+D0O4GY	T34239	Protoporphyrinogen oxidase	Modulator
+D0W9MM	T28661	Tubulin beta-2 chain	Inhibitor
+D0Z7ZM	T24211	C1 esterase inhibitor	Modulator
+D00AOJ	T23459	Epstein-Barr virus envelope glycoprotein gp340	Modulator
+D04UKC	T19693	Soluble guanylyl cyclase 	Modulator
+D0A4YE	T19244	Cytochrome P450 2C9	Modulator
+D0R6RU	T18468	BCR/ABL protein	Inhibitor
+D0MA9N	T16761	Pneumocystis carinii dihydropteroate synthase	Modulator
+D09YHJ	T16047	Glutamate-gated chloride channel	Activator
+D0A4IJ	T15352	HIV reverse transcriptase	Inhibitor
+D0ML1F	T15352	HIV reverse transcriptase	Modulator
+D0G6SD	T15352	HIV reverse transcriptase	Modulator
+D06FDR	T15352	HIV reverse transcriptase	Inhibitor
+D07HVY	T15352	HIV reverse transcriptase	Modulator
+D0S9SD	T15352	HIV reverse transcriptase	Modulator
+D0BP9C	T15352	HIV reverse transcriptase	Modulator
+D07TQV	T15352	HIV reverse transcriptase	Modulator
+D0O2EM	T15352	HIV reverse transcriptase	Modulator
+D0Z8EX	T15352	HIV reverse transcriptase	Inhibitor
+D0D9HW	T15352	HIV reverse transcriptase	Inhibitor
+D0R3FP	T15352	HIV reverse transcriptase	Modulator
+D0Z9QR	T15352	HIV reverse transcriptase	Inhibitor
+D01XYJ	T15352	HIV reverse transcriptase	Inhibitor
+D09EGZ	T07289	Duffy antigen chemokine receptor	Modulator
+D0VT8P	T06063	DNA polymerase (HSV-2)	Inhibitor
+D05QNO	T04689	Nicotinic acetylcholine receptor subunit alpha-1	Modulator
+D0M3QP	T03917	Sodium/potassium-transporting ATPase	Inhibitor
+D02OZE	T03917	Sodium/potassium-transporting ATPase	Inhibitor
+D0V3YT	T03896	Hepatitis C virus serine protease NS3/4A	Modulator
+D00TLP	T03896	Hepatitis C virus serine protease NS3/4A	Modulator
+D0X9CH	T03896	Hepatitis C virus serine protease NS3/4A	Modulator
