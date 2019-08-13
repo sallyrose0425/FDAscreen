@@ -14,6 +14,10 @@ def extract_ttd():
     ttd_targets = {}
     # A dictionary mapping (TTD Drug ID, TTD Target ID) (Target Name, Actions)
     ttd_interactions = {}
+    # A dictionary mapping Pubchem CID to TTD Drug ID.
+    drug_pubchem_to_ttd = {}
+    # A dictionary mapping UniProt PID to TTD Target ID
+    protein_uniprot_to_ttd = {}
 
     ### bidd.nus ###
     ### bidd.nus/drugDataset.txt ###
@@ -29,7 +33,13 @@ def extract_ttd():
         if not pubchem_cid: # Look up PubChemCID based on SMILES if it's not there.
             pubchem_cid = pubchem_smiles_to_cid(smiles)
         assert pubchem_cid
+        try:
+            assert pubchem_cid not in drug_pubchem_to_ttd
+        except AssertionError as e:
+            print('Duplicate PubChem CID', pubchem_cid)
+            continue
         ttd_drugs[ttddrugid] = (drugname, pubchem_cid, smiles, inchi)
+        drug_pubchem_to_ttd[pubchem_cid] = ttddrugid
         count += 1
     print('Processed %d lines' % count)
     ### bidd.nus/targetDataset.txt ###
@@ -49,7 +59,14 @@ def extract_ttd():
             print('Doesn\'t have uniprotid', (ttdtargetid, uniprotid, targetname, sequence))
             continue
         assert sequence
+        assert ttdtargetid not in ttd_targets
+        try:
+            assert uniprotid not in protein_uniprot_to_ttd
+        except AssertionError as e:
+            print('Duplicate UniProt ID', uniprotid, ttdtargetid, protein_uniprot_to_ttd[uniprotid])
+            continue
         ttd_targets[ttdtargetid] = (uniprotid, targetname, sequence)
+        protein_uniprot_to_ttd[uniprotid] = ttdtargetid
         count += 1
     print('Processed %d lines' % count)
     ### bidd.nus/interactionDataset.txt ###
@@ -58,7 +75,11 @@ def extract_ttd():
     interactions.next() # Skip column header line.
     count = 0 # Keep track of how many entries successfully processed.
     for ttd_drugid, ttd_targetid, targetname, actions in interactions:
-        assert ttd_drugid in ttd_drugs
+        try:
+            assert ttd_drugid in ttd_drugs
+        except AssertionError as e:
+            print('Missing drug id', ttd_drugid)
+            continue
         try:
             assert ttd_targetid in ttd_targets
         except AssertionError as e:
@@ -195,19 +216,26 @@ def merge_drugs(rows1, rows2):
         drugs[cid] = smiles
     for cid, smiles in rows2:
         if cid in drugs:
-            assert drugs[cid] == smiles
+            try:
+                assert drugs[cid] == smiles
+            except AssertionError as e:
+                print('DUPLICATE CID WITH NONMATCHING SMILES', cid, drugs[cid], smiles)
+                continue
             continue
         drugs[cid] = smiles
     return drugs
 
 def merge_proteins(rows1, rows2):
-    drugs = {}
+    proteins = {}
     for pid, sequence in rows1:
         assert pid not in proteins
         proteins[pid] = sequence
     for pid, sequence in rows2:
         if pid in proteins:
-            assert proteins[pid] == sequence
+            try:
+                assert proteins[pid] == sequence
+            except AssertionError as e:
+                print('DUPLICATE PID WITH NONMATCHING SEQUENCE', pid, sequence, proteins[pid])
             continue
         proteins[pid] = sequence
     return proteins
@@ -223,3 +251,14 @@ def merge_interactions(rows1, rows2):
             continue
         interactions[(cid, pid)] = activity
     return interactions
+
+def main():
+    ttd_drugs, ttd_targets, ttd_interactions = extract_ttd()
+    db_drugs, db_proteins, db_interactions = extract_db()
+    drugs1, proteins1, interactions1 = process_ttd(ttd_drugs, ttd_targets, ttd_interactions)
+    drugs2, proteins2, interactions2 = process_db(db_drugs, db_proteins, db_interactions)
+    drugs = merge_drugs(drugs1, drugs2)
+    proteins = merge_proteins(proteins1, proteins2)
+    interactions = merge_interactions(interactions1, interactions2)
+    return drugs, proteins, interactions
+
