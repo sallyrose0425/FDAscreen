@@ -70,6 +70,24 @@ def extract_ttd():
     print('Processed %d lines' % count)
     return ttd_drugs, ttd_targets, ttd_interactions
 
+# Takes the dictionaries extracted by extract_ttd and
+# puts into format suitable for combining with other data.
+def process_ttd(ttd_drugs, ttd_targets, ttd_interactions):
+    drugs, proteins, interactions = [], [], []
+    for ttd_drugid, (drug_name, pubchem_cid, smiles, inchi) in ttd_drugs.items():
+        assert pubchem_cid
+        assert smiles
+        drugs.append((pubchem_cid, smiles))
+    for ttdtargetid, (uniprot_id, targetname, sequence) in ttd_targets.items():
+        assert uniprot_id
+        assert sequence
+        proteins.append((uniprot_id, sequence))
+    for (ttd_drugid, ttd_targetid), (targetname, actions) in ttd_interactions.items():
+        drug_name, pubchem_cid, smiles, inchi = ttd_drugs[ttd_drugid]
+        uniprot_id, target_name, sequence = ttd_targets[ttd_targetid]
+        interactions.append((pubchem_cid, uniprot_id, 1))
+    return drugs, proteins, interactions
+
 def extract_db():
     # A dictionary mapping DB Drug ID to (Drug Name, SMILES, InChi, PubChem CID).
     db_drugs = {}
@@ -150,3 +168,58 @@ def extract_db():
 
     return db_drugs, db_proteins, db_interactions
 
+# Takes the dictionaries extracted by extract_ttd and
+# puts into format suitable for combining with other data.
+def process_db(db_drugs, db_proteins, db_interactions):
+    drugs, proteins, interactions = [], [], []
+    for db_drugid, (drug_name, smiles, inchi, pubchem_cid) in db_drugs.items():
+        assert pubchem_cid
+        assert smiles
+        drugs.append((pubchem_cid, smiles))
+    for (db_proteinid, protein_name), (uniprot_id, uniprotkb_entryname, fasta, sequence) in db_proteins.items():
+        assert uniprot_id
+        assert sequence
+        proteins.append((uniprot_id, sequence))
+    for (db_drugid, (db_proteinid, protein_name)), (receptor, pharma_action, actions) in db_interactions.items():
+        drug_name, smiles, inchi, pubchem_cid = db_drugs[db_drugid]
+        uniprot_id, uniprotkb_entryname, fasta, sequence = db_proteins[(db_proteinid, protein_name)]
+        interactions.append((pubchem_cid, uniprot_id, 1))
+    return drugs, proteins, interactions
+
+
+#TODO: Add checking for duplicate smiles.
+def merge_drugs(rows1, rows2):
+    drugs = {}
+    for cid, smiles in rows1:
+        assert cid not in drugs
+        drugs[cid] = smiles
+    for cid, smiles in rows2:
+        if cid in drugs:
+            assert drugs[cid] == smiles
+            continue
+        drugs[cid] = smiles
+    return drugs
+
+def merge_proteins(rows1, rows2):
+    drugs = {}
+    for pid, sequence in rows1:
+        assert pid not in proteins
+        proteins[pid] = sequence
+    for pid, sequence in rows2:
+        if pid in proteins:
+            assert proteins[pid] == sequence
+            continue
+        proteins[pid] = sequence
+    return proteins
+
+def merge_interactions(rows1, rows2):
+    interactions = {}
+    for cid, pid, activity in rows1:
+        assert (cid, pid) not in interactions
+        interactions[(cid, pid)] = activity
+    for cid, pid, activity in rows2:
+        if (cid, pid) in interactions:
+            assert interactions[(cid, pid)] == activity
+            continue
+        interactions[(cid, pid)] = activity
+    return interactions
