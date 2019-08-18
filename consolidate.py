@@ -247,18 +247,44 @@ def merge_interactions(rows1, rows2):
         interactions[(cid, pid)] = activity
     for cid, pid, activity in rows2:
         if (cid, pid) in interactions:
-            assert interactions[(cid, pid)] == activity
+            try:
+                assert interactions[(cid, pid)] == activity
+            except AssertionError as e:
+                print('Conflicting activity data for', (cid, pid))
             continue
         interactions[(cid, pid)] = activity
     return interactions
 
 def main():
+    drugs = []
+    with open('data/compounds.txt', 'r') as f:
+        r = csv.reader(f)
+        r.next()
+        for index, cid, smiles in r:
+            drugs.append((cid, smiles))
+
+    proteins = []
+    with open('data/proteins.txt', 'r') as f:
+        r = csv.reader(f)
+        r.next()
+        for index, pid, sequence in r:
+            proteins.append((pid, sequence))
+
+    interactions = []
+    with open('data/interactions.txt', 'r') as f:
+        r = csv.reader(f)
+        r.next()
+        for index, cid, pid, activity in r:
+            interactions.append((cid, pid, activity))
+
     ttd_drugs, ttd_targets, ttd_interactions = extract_ttd()
     db_drugs, db_proteins, db_interactions = extract_db()
     drugs1, proteins1, interactions1 = process_ttd(ttd_drugs, ttd_targets, ttd_interactions)
     drugs2, proteins2, interactions2 = process_db(db_drugs, db_proteins, db_interactions)
-    drugs = merge_drugs(drugs1, drugs2)
-    proteins = merge_proteins(proteins1, proteins2)
-    interactions = merge_interactions(interactions1, interactions2)
+    drugs = merge_drugs(drugs, drugs1)
+    drugs = merge_drugs(drugs.items(), drugs2)
+    proteins = merge_proteins(proteins, proteins1)
+    proteins = merge_proteins(proteins.items(), proteins2)
+    interactions = merge_interactions(interactions, interactions1)
+    interactions = merge_interactions([(cid, pid, activity) for (cid, pid), activity in interactions.items()], interactions2)
     return drugs, proteins, interactions
-
