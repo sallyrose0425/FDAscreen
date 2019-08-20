@@ -11,6 +11,5 @@ One protein sequence per gene (FASTA)
 
 <https://www.uniprot.org/proteomes/UP000005640>
 
-[Download](ftp://ftp.uniprot.org/pub/databases/uniprot/current_release
-/knowledgebase/reference_proteomes/Eukaryota/UP000005640_9606.fasta.gz)
+[Download](ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/reference_proteomes/Eukaryota/UP000005640_9606.fasta.gz)
 
