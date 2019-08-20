@@ -1,19 +1,20 @@
 import pandas as pd
 
-
 #####################################################################
 fastas = {}
-target = None
-with open("sequence_featurization/protein.fasta", "r") as fastas_file:
-    for line in fastas_file.readlines():
-        if line[0] == ">":
-            target = line.split(" ")[0][1:]
-            fastas[target] = ""
-        else:
-            line = line.replace("\n", "")
-            fastas[target] += line
+with open("sequence_featurization/UP000005640_9606.fasta", "r") as fastas_file:
+    text = fastas_file.read()
+prots = iter(text.split(">")[1:])
+for prot in prots:
+    try:
+        ID = prot.split(" ")[0]
+        FASTA = prot[prot.index("\n"):].replace("\n", "")
+        fastas[ID] = FASTA
+    except ValueError:
+        continue
+
 fastas_frame = pd.Series(fastas)
-fastas_frame.to_csv("sequence_featurization/FASTAS.csv", header=False)
+fastas_frame.to_csv("sequence_featurization/reference_FASTAS.csv", header=False)
 
 #####################################################################
 smiles = {}
@@ -25,5 +26,4 @@ for mol in mols:
     SMILES = mol.split("<SMILES>\n")[1].split("\n")[0]
     smiles[ligand] = SMILES
 smiles_frame = pd.Series(smiles)
-smiles_frame.to_csv("sequence_featurization/SMILES.csv", header=False)
-
+smiles_frame.to_csv("sequence_featurization/reference_SMILES.csv", header=False)
