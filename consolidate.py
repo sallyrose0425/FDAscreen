@@ -287,4 +287,23 @@ def main():
     proteins = merge_proteins(proteins.items(), proteins2)
     interactions = merge_interactions(interactions, interactions1)
     interactions = merge_interactions([(cid, pid, activity) for (cid, pid), activity in interactions.items()], interactions2)
+
+    with open('data/consolidated/compounds.txt', 'w') as f:
+        w = csv.writer(f)
+        w.writerow(('', 'cid', 'smiles'))
+        for index, (cid, smiles) in enumerate(drugs.items()):
+            w.writerow((index, cid, smiles))
+
+    with open('data/consolidated/proteins.txt', 'w') as f:
+        w = csv.writer(f)
+        w.writerow(('', 'pid', 'sequence'))
+        for index, (pid, sequence) in enumerate(proteins.items()):
+            w.writerow((index, pid, sequence))
+
+    with open('data/consolidated/interactions.txt', 'w') as f:
+        w = csv.writer(f)
+        w.writerow(('', 'cid', 'pid', 'activity'))
+        for index, ((cid, pid), activity) in enumerate(interactions.items()):
+            w.writerow((index, cid, pid, activity))
+
     return drugs, proteins, interactions
