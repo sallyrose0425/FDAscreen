@@ -25,12 +25,12 @@ for (cid, pid), activity in interactions.items():
     drugs[cid] = (drug_active, drug_total)
     proteins[pid] = (protein_active, protein_total)
     total += 1
-print('Active: %d(%d%%)\n Total: %d' % (active, float(active)/total*100, total))
+print('Active: %d(%d%%)\n Total: %d\n' % (active, float(active)/total*100, total))
 print('\nDrugs')
 for cid in drugs:
     active, total = drugs[cid]
-    print('%s: %d/%d (%d%%)' % (cid, active, total, float(active)/total*100))
+    print('%s: %d/%d (%d%%)\n' % (cid, active, total, float(active)/total*100))
 print('\nProteins')
 for pid in proteins:
     active, total = proteins[pid]
-    print('%s: %d/%d (%d%%)' % (pid, active, total, float(active)/total*100))
+    print('%s: %d/%d (%d%%)\n' % (pid, active, total, float(active)/total*100))
