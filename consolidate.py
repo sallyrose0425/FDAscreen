@@ -25,70 +25,89 @@ def extract_ttd():
     # Three of the entries in drugDataset.txt don't have PubChemCIDs.
     #  pubchem_smiles_to_cid is able to find PubChemCIDs for all three of them.
     print('Processing bidd.nus/drugDataset.txt...')
-    drugs = csv.reader(open('data/bidd.nus/drugDataset.txt', 'rb'), delimiter='\t')
-    drugs.next() # Skip column header line.
-    count = 0 # Keep track of how many entries successfully processed.
-    for ttddrugid, drugname, pubchem_cid, smiles, inchi in drugs:
-        assert ttddrugid not in ttd_drugs # Assert that there are no duplicate entries.
+    drugs = csv.reader(open('data/bidd.nus/drugDataset.txt', 'r'), delimiter='\t')
+    next(drugs) # Skip column header line.
+    lines, good_lines = 0, 0 # Keep track of how many entries successfully processed.
+    for ttd_drugid, drugname, pubchem_cid, smiles, inchi in drugs:
+        lines += 1
+        assert ttd_drugid not in ttd_drugs # Assert that there are no duplicate entries.
         if not pubchem_cid: # Look up PubChemCID based on SMILES if it's not there.
             pubchem_cid = pubchem_smiles_to_cid(smiles)
         assert pubchem_cid
         try:
             assert pubchem_cid not in drug_pubchem_to_ttd
         except AssertionError as e:
-            print('Duplicate PubChem CID', pubchem_cid)
-            continue
-        ttd_drugs[ttddrugid] = (drugname, pubchem_cid, smiles, inchi)
-        drug_pubchem_to_ttd[pubchem_cid] = ttddrugid
-        count += 1
-    print('Processed %d lines' % count)
+            old_drugid = drug_pubchem_to_ttd[pubchem_cid]
+            old = (old_drugid,) + ttd_drugs[old_drugid]
+            old_smiles = old[3]
+            if smiles != old_smiles:
+                error = ('Duplicate PubChem CID', old, (ttd_drugid, drugname, pubchem_cid, smiles, inchi))
+                print(repr(error))
+                continue
+            else:
+                warning = ('Duplicate PubChem CID with Matching SMILES', 
+                           old, (ttd_drugid, drugname, pubchem_cid, smiles, inchi))
+                print(repr(warning))
+                continue
+        ttd_drugs[ttd_drugid] = (drugname, pubchem_cid, smiles, inchi)
+        drug_pubchem_to_ttd[pubchem_cid] = ttd_drugid
+        good_lines += 1
+    print('Processed %d of %d lines' % (good_lines, lines))
     ### bidd.nus/targetDataset.txt ###
     # Many of the entries have residue numbers.
     # One entry does not have a UniProtID at all.
     #  Manual searches have not found a matching FASTA.
     # The sequences are listed without FASTA header.
     print('Processing bidd.nus/targetDataset.txt...')
-    targets = csv.reader(open('data/bidd.nus/targetDataset.txt', 'rb'), delimiter='\t')
-    targets.next() # Skip column header line.
-    count = 0 # Keep track of how many entries successfully processed.
-    for ttdtargetid, uniprotid, targetname, sequence in targets:
-        assert ttdtargetid not in ttd_targets
+    targets = csv.reader(open('data/bidd.nus/targetDataset.txt', 'r'), delimiter='\t')
+    next(targets) # Skip column header line.
+    lines, good_lines = 0, 0 # Keep track of how many entries successfully processed.
+    for ttd_targetid, uniprotid, targetname, sequence in targets:
+        lines += 1
+        assert ttd_targetid not in ttd_targets
         try:
             assert uniprotid
         except AssertionError as e:
-            print('Doesn\'t have uniprotid', (ttdtargetid, uniprotid, targetname, sequence))
+            error = ('Missing UniProt ID', (ttd_targetid, uniprotid, targetname, sequence))
+            print(repr(error))
             continue
         assert sequence
-        assert ttdtargetid not in ttd_targets
+        assert ttd_targetid not in ttd_targets
         try:
             assert uniprotid not in protein_uniprot_to_ttd
         except AssertionError as e:
-            print('Duplicate UniProt ID', uniprotid, ttdtargetid, protein_uniprot_to_ttd[uniprotid])
+            old_targetid = protein_uniprot_to_ttd[uniprotid]
+            old = (old_targetid,) + ttd_targets[old_targetid]
+            error = ('Duplicate UniProt ID', old, (ttd_targetid, uniprotid, targetname, sequence))
+            print(repr(error))
             continue
-        ttd_targets[ttdtargetid] = (uniprotid, targetname, sequence)
-        protein_uniprot_to_ttd[uniprotid] = ttdtargetid
-        count += 1
-    print('Processed %d lines' % count)
+        ttd_targets[ttd_targetid] = (uniprotid, targetname, sequence)
+        protein_uniprot_to_ttd[uniprotid] = ttd_targetid
+        good_lines += 1
+    print('Processed %d of %d lines' % (good_lines, lines))
     ### bidd.nus/interactionDataset.txt ###
     print('Processing bidd.nus/interactionDataset.txt...')
-    interactions = csv.reader(open('data/bidd.nus/interactionDataset.txt', 'rb'), delimiter='\t')
-    interactions.next() # Skip column header line.
-    count = 0 # Keep track of how many entries successfully processed.
+    interactions = csv.reader(open('data/bidd.nus/interactionDataset.txt', 'r'), delimiter='\t')
+    next(interactions) # Skip column header line.
+    lines, good_lines = 0, 0 # Keep track of how many entries successfully processed.
     for ttd_drugid, ttd_targetid, targetname, actions in interactions:
+        lines += 1
         try:
             assert ttd_drugid in ttd_drugs
         except AssertionError as e:
-            print('Missing drug id', ttd_drugid)
+            error = ('Unknown Drug ID', ttd_drugid)
+            print(repr(error))
             continue
         try:
             assert ttd_targetid in ttd_targets
         except AssertionError as e:
-            print('Unknown target id', ttd_targetid, (ttd_drugid, ttd_targetid, targetname, actions))
+            error = ('Unknown Target ID', ttd_targetid)
+            print(repr(error))
             continue
         assert (ttd_drugid, ttd_targetid) not in ttd_interactions
         ttd_interactions[(ttd_drugid, ttd_targetid)] = (targetname, actions)
-        count += 1
-    print('Processed %d lines' % count)
+        good_lines += 1
+    print('Processed %d of %d lines' % (good_lines, lines))
     return ttd_drugs, ttd_targets, ttd_interactions
 
 # Takes the dictionaries extracted by extract_ttd and
@@ -124,7 +143,7 @@ def extract_db():
     # Lines in proteinDataset.txt contain newlines, breaking usual tab-delimited file reading code.
     # I've built a special routine for reading that file.
     print('Processing drugbankversionmonth12Final/drugDataset.txt...')
-    drugs = csv.reader(open('data/drugbankversionmonth12Final/drugDataset.txt', 'rb'), delimiter='\t')
+    drugs = csv.reader(open('data/drugbankversionmonth12Final/drugDataset.txt', 'r'), delimiter='\t')
     count = 0 # Keep track of how many entries successfully processed.
     for db_drugid, drug_name, smiles, inchi, pubchem_cid in drugs:
         assert db_drugid not in db_drugs
@@ -163,7 +182,7 @@ def extract_db():
     print('Processed %d lines' % count)
 
     print('Processing drugbankversionmonth12Final/interactionsDataset.txt...')
-    interactions = csv.reader(open('data/drugbankversionmonth12Final/interactionsDataset.txt', 'rb'), delimiter='\t')
+    interactions = csv.reader(open('data/drugbankversionmonth12Final/interactionsDataset.txt', 'r'), delimiter='\t')
     count = 0
     for db_drugid, db_proteinid, receptor, pharma_action, protein_name, actions in interactions:
         try:
@@ -259,21 +278,21 @@ def main():
     drugs = []
     with open('data/compounds.txt', 'r') as f:
         r = csv.reader(f)
-        r.next()
+        next(r)
         for index, cid, smiles in r:
             drugs.append((cid, smiles))
 
     proteins = []
     with open('data/proteins.txt', 'r') as f:
         r = csv.reader(f)
-        r.next()
+        next(r)
         for index, pid, sequence in r:
             proteins.append((pid, sequence))
 
     interactions = []
     with open('data/interactions.txt', 'r') as f:
         r = csv.reader(f)
-        r.next()
+        next(r)
         for index, cid, pid, activity in r:
             interactions.append((cid, pid, activity))
 
@@ -289,19 +308,19 @@ def main():
     interactions = merge_interactions([(cid, pid, activity) for (cid, pid), activity in interactions.items()], interactions2)
 
     with open('data/consolidated/compounds.txt', 'w') as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator='\n')
         w.writerow(('', 'cid', 'smiles'))
         for index, (cid, smiles) in enumerate(drugs.items()):
             w.writerow((index, cid, smiles))
 
     with open('data/consolidated/proteins.txt', 'w') as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator='\n')
         w.writerow(('', 'pid', 'sequence'))
         for index, (pid, sequence) in enumerate(proteins.items()):
             w.writerow((index, pid, sequence))
 
     with open('data/consolidated/interactions.txt', 'w') as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator='\n')
         w.writerow(('', 'cid', 'pid', 'activity'))
         for index, ((cid, pid), activity) in enumerate(interactions.items()):
             w.writerow((index, cid, pid, activity))

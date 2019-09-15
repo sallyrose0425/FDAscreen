@@ -6,6 +6,8 @@ Total: 62314
 
 Drugs
 
+Total: 2414
+
 Only Actives: 951(39%)
 
 Only Inactives: 151(6%)
@@ -15,6 +17,8 @@ Fewer than 5 interactions: 819(33%)
 
 
 Proteins
+
+Total: 3419
 
 Only Actives: 3247(94%)
 

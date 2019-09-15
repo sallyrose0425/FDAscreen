@@ -39,8 +39,9 @@ for cid in drugs:
         few_interactions += 1
     #print('%s: %d/%d (%d%%)\n' % (cid, active, total, float(active)/total*100))
 total = len(drugs)
-print('Only Actives: %d(%d%%)\n\nOnly Inactives: %d(%d%%)\n\nFewer than 5 interactions: %d(%d%%)\n\n' % 
-      (only_active, float(only_active)/total*100, 
+print('Total: %d\n\nOnly Actives: %d(%d%%)\n\nOnly Inactives: %d(%d%%)\n\nFewer than 5 interactions: %d(%d%%)\n\n' % 
+      (total,
+       only_active, float(only_active)/total*100, 
        only_inactive, float(only_inactive)/total*100, 
        few_interactions, float(few_interactions)/total*100))
 
@@ -56,7 +57,8 @@ for pid in proteins:
         few_interactions += 1
     #print('%s: %d/%d (%d%%)\n' % (pid, active, total, float(active)/total*100))
 total = len(proteins)
-print('Only Actives: %d(%d%%)\n\nOnly Inactives: %d(%d%%)\n\nFewer than 5 interactions: %d(%d%%)\n\n' % 
-      (only_active, float(only_active)/total*100, 
+print('Total: %d\n\nOnly Actives: %d(%d%%)\n\nOnly Inactives: %d(%d%%)\n\nFewer than 5 interactions: %d(%d%%)\n\n' % 
+      (total,
+       only_active, float(only_active)/total*100, 
        only_inactive, float(only_inactive)/total*100, 
        few_interactions, float(few_interactions)/total*100))

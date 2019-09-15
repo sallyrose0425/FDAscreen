@@ -56,6 +56,13 @@ def pubchem_pid_to_fasta(pid):
 # Strengthen error checking.
 # Compare to searches based on drug name.
 def pubchem_smiles_to_cid(smiles):
+    try:
+        with open('tmp/pubchem_smiles_to_cid.cache', 'r') as f:
+            cache = eval(f.read())
+    except FileNotFoundError as e:
+        cache = {}
+    if smiles in cache:
+        return cache[smiles]
     request_url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/identity/smiles/JSON'
     callback_url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/listkey/%s/cids/JSON'
     response = requests.post(request_url, [('smiles', smiles)])
@@ -66,7 +73,11 @@ def pubchem_smiles_to_cid(smiles):
         raw_response = urlopen(callback_url % listkey).read()
         response = json.loads(raw_response)
     assert 'IdentifierList' in response
-    return response['IdentifierList']['CID'][0]
+    cid = response['IdentifierList']['CID'][0]
+    cache[smiles] = cid
+    with open('tmp/pubchem_smiles_to_cid.cache', 'w') as f:
+        f.write(repr(cache))
+    return cid
 
 def strip_fasta(s):
     return ''.join(s.split('\n')[1:])
