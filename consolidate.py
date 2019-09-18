@@ -1,5 +1,5 @@
 from __future__ import print_function
-import os, csv
+import os, csv, requests
 from util import pubchem_smiles_to_cid, read_broken_file, strip_fasta
 
 # https://www.ebi.ac.uk/Tools/sss/fasta/
@@ -31,7 +31,9 @@ def extract_ttd():
     for ttd_drugid, drugname, pubchem_cid, smiles, inchi in drugs:
         lines += 1
         assert ttd_drugid not in ttd_drugs # Assert that there are no duplicate entries.
+        assert smiles # Assert that there is a SMILES string.
         if not pubchem_cid: # Look up PubChemCID based on SMILES if it's not there.
+            warning = ('Missing PubChem CID', (ttd_drugid, drugname, pubchem_cid, smiles, inchi))
             pubchem_cid = pubchem_smiles_to_cid(smiles)
         assert pubchem_cid
         try:
@@ -41,14 +43,15 @@ def extract_ttd():
             old = (old_drugid,) + ttd_drugs[old_drugid]
             old_smiles = old[3]
             if smiles != old_smiles:
-                error = ('Duplicate PubChem CID', old, (ttd_drugid, drugname, pubchem_cid, smiles, inchi))
-                print(repr(error))
+                error = ('Duplicate PubChem CID with non-matching SMILES', 
+                         old, (ttd_drugid, drugname, pubchem_cid, smiles, inchi))
+                #print(repr(error))
                 continue
             else:
-                warning = ('Duplicate PubChem CID with Matching SMILES', 
+                # The new SMILES matches the old SMILES, include in TTD Drugs data and print a warning.
+                warning = ('Duplicate PubChem CID with matching SMILES', 
                            old, (ttd_drugid, drugname, pubchem_cid, smiles, inchi))
-                print(repr(warning))
-                continue
+                #print(repr(warning))
         ttd_drugs[ttd_drugid] = (drugname, pubchem_cid, smiles, inchi)
         drug_pubchem_to_ttd[pubchem_cid] = ttd_drugid
         good_lines += 1
@@ -78,9 +81,16 @@ def extract_ttd():
         except AssertionError as e:
             old_targetid = protein_uniprot_to_ttd[uniprotid]
             old = (old_targetid,) + ttd_targets[old_targetid]
-            error = ('Duplicate UniProt ID', old, (ttd_targetid, uniprotid, targetname, sequence))
-            print(repr(error))
-            continue
+            old_sequence = old[3]
+            if sequence != old_sequence:
+                error = ('Duplicate UniProt ID with non-matching sequence', 
+                         old, (ttd_targetid, uniprotid, targetname, sequence))
+                #print(repr(error))
+                continue
+            else:
+                warning = ('Duplicate UniProt ID with matching sequence', 
+                           old, (ttd_targetid, uniprotid, targetname, sequence))
+                #print(repr(warning))
         ttd_targets[ttd_targetid] = (uniprotid, targetname, sequence)
         protein_uniprot_to_ttd[uniprotid] = ttd_targetid
         good_lines += 1
@@ -144,17 +154,25 @@ def extract_db():
     # I've built a special routine for reading that file.
     print('Processing drugbankversionmonth12Final/drugDataset.txt...')
     drugs = csv.reader(open('data/drugbankversionmonth12Final/drugDataset.txt', 'r'), delimiter='\t')
-    count = 0 # Keep track of how many entries successfully processed.
+    lines, good_lines = 0, 0 # Keep track of how many entries successfully processed.
     for db_drugid, drug_name, smiles, inchi, pubchem_cid in drugs:
+        lines += 1
         assert db_drugid not in db_drugs
         assert smiles
         if not pubchem_cid: # Look up PubChemCID based on SMILES if it's not there.
-            #print('Missing pubchem_cid', db_drugid, drug_name, smiles, inchi, pubchem_cid)
-            #pubchem_cid = pubchem_smiles_to_cid(smiles)
+            warning = ('Missing PubChem CID', (db_drugid, drug_name, smiles, inchi, pubchem_cid))
+            print(repr(warning))
+            try:
+                # Fails on 'Cl[223Ra]Cl'
+                pubchem_cid = pubchem_smiles_to_cid(smiles)
+            except Exception as e:
+                print(e)
+                continue
             continue
         db_drugs[db_drugid] = (drug_name, smiles, inchi, pubchem_cid)
-        count += 1
-    print('Processed %d lines' % count)
+        good_lines += 1
+    print('Processed %d of %d lines' % (good_lines, lines))
+    1/0
 
     print('Processing drugbankversionmonth12Final/proteinDataset.txt...')
     proteins = read_broken_file('data/drugbankversionmonth12Final/proteinDataset.txt')
