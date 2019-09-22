@@ -163,16 +163,15 @@ def extract_db():
             warning = ('Missing PubChem CID', (db_drugid, drug_name, smiles, inchi, pubchem_cid))
             print(repr(warning))
             try:
-                # Fails on 'Cl[223Ra]Cl'
+                # Fails on 'Cl[223Ra]Cl', and many others...
                 pubchem_cid = pubchem_smiles_to_cid(smiles)
             except Exception as e:
                 print(e)
                 continue
-            continue
+            assert pubchem_cid # Assert that we actually have a PubChem CID at this point.
         db_drugs[db_drugid] = (drug_name, smiles, inchi, pubchem_cid)
         good_lines += 1
     print('Processed %d of %d lines' % (good_lines, lines))
-    1/0
 
     print('Processing drugbankversionmonth12Final/proteinDataset.txt...')
     proteins = read_broken_file('data/drugbankversionmonth12Final/proteinDataset.txt')
