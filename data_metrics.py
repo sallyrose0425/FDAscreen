@@ -1,7 +1,10 @@
+from __future__ import print_function
 import csv
 
+#datadir = 'data/consolidated/'
+datadir = 'data/extended/'
 interactions = {}
-with open('data/consolidated/interactions.txt', 'r') as f:
+with open(datadir + 'interactions.txt', 'r') as f:
     r = csv.reader(f)
     next(r)
     for i, cid, pid, activity in r:
@@ -33,6 +36,7 @@ for cid in drugs:
     active, total = drugs[cid]
     if active == total:
         only_active += 1
+        #print('Only Active: ', cid)
     if active == 0:
         only_inactive += 1
     if total < 5:
