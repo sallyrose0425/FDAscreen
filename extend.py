@@ -18,12 +18,55 @@ for i, cid, pid, activity in ir:
 drugs_,proteins_,interactions_ = map(dict, (drugs, proteins, interactions))
 
 new_interactions = {}
-pids = list(proteins.keys())
+# Query proteins for all known drugs, adding proteins as they are found.
+for cid in drugs:
+    table = pubchem_query_cid_interactions(cid)
+    if 'protacxn' in table:
+        for row in table[['protacxn', 'activity']].itertuples():
+            if row.protacxn == 'NULL' or row.activity not in ('Active', 'Inactive'):
+                continue
+            protacxn = row.protacxn
+            if protacxn not in proteins:
+                print(cid,protacxn)
+                try:
+                    sequence = pubchem_pid_to_fasta(protacxn)
+                except Exception as e:
+                    print(e)
+                    continue
+                proteins[protacxn] = sequence
+            else:
+                sequence = proteins[row.protacxn]
+            if (cid,pid) in new_interactions:
+                actives, inactives = new_interactions[(cid,pid)]
+            else:
+                actives, inactives = 0, 0
+            if row.activity == 'Active':
+                actives += 1
+            elif row.activity == 'Inactive':
+                inactives += 1
+            new_interactions[(cid,pid)] = actives, inactives
 
+for ((cid, pid), (actives, inactives)) in new_interactions.items():
+    if (cid, pid) in interactions and interactions[(cid,pid)] == 1:
+        activity = 1
+    elif actives < inactives:
+        activity = 0
+    else:
+        activity = 1
+    interactions[(cid,pid)] = activity
+
+new_interactions = {}
+pids = list(proteins.keys())
+# Use already queried drug info to save time.
+datadir = 'data/extended/'
+dr = csv.reader(open(datadir + 'compounds.txt', 'r'))
+for i, cid, smiles in dr:
+    drugs[cid] = smiles
+# Query interactions for all proteins, adding drugs as they are found.
 while pids:
     pid = pids.pop(0)
     try:
-        rows = pubchem_query_protein_interactions(pid,100)
+        rows = pubchem_query_protein_interactions(pid)
     except AssertionError as e:
         print('Error querying protein interactions', str(e))
         pids.append(pid)
@@ -57,7 +100,6 @@ for ((cid, pid), (actives, inactives)) in new_interactions.items():
         activity = 1
     interactions[(cid,pid)] = activity
 
-datadir = 'data/extended/'
 with open(datadir + 'compounds.txt', 'w') as f:
     w = csv.writer(f, lineterminator='\n')
     w.writerow(('', 'cid', 'smiles'))

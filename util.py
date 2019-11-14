@@ -1,6 +1,7 @@
 import json, requests, csv, re
 import pandas as pd
 from time import sleep
+from collections import OrderedDict
 from dl import query_cid_interactions
 # Replace all the urllib garbage with requests
 import sys
@@ -78,6 +79,39 @@ def pubchem_smiles_to_cid(smiles):
     with open('tmp/pubchem_smiles_to_cid.cache', 'w') as f:
         f.write(repr(cache))
     return cid
+
+def pubchem_query_cid_interactions(cid, limit=1000000):
+    base_url = 'https://pubchem.ncbi.nlm.nih.gov/sdq/sdqagent.cgi?%s'
+    query = [OrderedDict([('download', ['*']),
+                          ('collection',   'bioactivity'),
+                          ('where',        {'ands': [{'cid': str(cid)}] }),
+                          ('order',        ['acvalue,asc']),
+                          ('start',        1),
+                          ('limit',        1000000),
+                          ('nullatbottom', 0)
+                         ]),
+             OrderedDict([('histogram', 'activity'), ('bincount', 10000)])]
+    params = {'infmt': 'json', 'outfmt': 'txt', 'query': json.dumps(query)}
+    url = base_url % urlencode(params)
+    table = pd.read_csv(url, na_filter=False, engine='python')
+    return table
+
+def pubchem_query_protein_interactions(protacxn, limit=10000000):
+    url = 'https://pubchem.ncbi.nlm.nih.gov/assay/pcget.cgi?task=protein_bioactivity&protacxn=%s&start=1&limit=%d' % (protacxn, limit)
+    response = requests.get(url)
+    assert response.status_code == 200
+    output = json.loads(response.text)
+    outputset = output['SDQOutputSet']
+    if outputset[0]['status']['code'] != 0:
+        raise AssertionError(outputset[0]['status']['error'])
+    rowset, status = outputset
+    return rowset['rows']
+
+def pubchem_cid_to_canonical_smiles(cid):
+    url = 'https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/16129704/property/CanonicalSMILES/txt'
+    response = requests.get(url)
+    assert response.status_code == 200
+    return response.text.strip()
 
 def strip_fasta(s):
     return ''.join(s.split('\n')[1:])
