@@ -1,6 +1,6 @@
 from __future__ import print_function
 import csv
-from util import pubchem_query_protein_interactions
+from util import *
 
 datadir = 'data/consolidated/'
 #datadir = 'data/'
@@ -18,12 +18,13 @@ for i, cid, pid, activity in ir:
 drugs_,proteins_,interactions_ = map(dict, (drugs, proteins, interactions))
 
 new_interactions = {}
+bad_pids = []
 # Query proteins for all known drugs, adding proteins as they are found.
 for cid in drugs:
     table = pubchem_query_cid_interactions(cid)
     if 'protacxn' in table:
         for row in table[['protacxn', 'activity']].itertuples():
-            if row.protacxn == 'NULL' or row.activity not in ('Active', 'Inactive'):
+            if row.protacxn == 'NULL' or row.protacxn in bad_pids or row.activity not in ('Active', 'Inactive'):
                 continue
             protacxn = row.protacxn
             if protacxn not in proteins:
@@ -32,6 +33,7 @@ for cid in drugs:
                     sequence = pubchem_pid_to_fasta(protacxn)
                 except Exception as e:
                     print(e)
+                    bad_pids.append(protacxn)
                     continue
                 proteins[protacxn] = sequence
             else:
@@ -55,10 +57,23 @@ for ((cid, pid), (actives, inactives)) in new_interactions.items():
         activity = 1
     interactions[(cid,pid)] = activity
 
+datadir = 'data/extended/'
+
+with open(datadir + 'proteins.txt', 'w') as f:
+    w = csv.writer(f, lineterminator='\n')
+    w.writerow(('', 'pid', 'sequence'))
+    for index, (pid, sequence) in enumerate(proteins.items()):
+        w.writerow((index, pid, sequence))
+
+with open(datadir + 'interactions.txt', 'w') as f:
+    w = csv.writer(f, lineterminator='\n')
+    w.writerow(('', 'cid', 'pid', 'activity'))
+    for index, ((cid, pid), activity) in enumerate(interactions.items()):
+        w.writerow((index, cid, pid, activity))
+
 new_interactions = {}
 pids = list(proteins.keys())
 # Use already queried drug info to save time.
-datadir = 'data/extended/'
 dr = csv.reader(open(datadir + 'compounds.txt', 'r'))
 for i, cid, smiles in dr:
     drugs[cid] = smiles
