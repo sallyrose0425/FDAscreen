@@ -6,7 +6,7 @@ datadir = 'data/consolidated/'
 #datadir = 'data/'
 drugs,proteins,interactions = {}, {}, {}
 dr = csv.reader(open(datadir + 'compounds.txt', 'r'))
-pr = csv.reader(open(datadir + 'proteins.txt', 'r'))
+pr = csv.reader(open('data/extended/' + 'proteins.txt', 'r'))
 ir = csv.reader(open(datadir + 'interactions.txt', 'r'))
 print(next(dr), next(pr), next(ir))
 for i, cid, smiles in dr:
@@ -17,6 +17,7 @@ for i, cid, pid, activity in ir:
     interactions[(cid, pid)] = int(activity)
 drugs_,proteins_,interactions_ = map(dict, (drugs, proteins, interactions))
 
+'''
 new_interactions = {}
 bad_pids = []
 # Query proteins for all known drugs, adding proteins as they are found.
@@ -56,6 +57,7 @@ for ((cid, pid), (actives, inactives)) in new_interactions.items():
     else:
         activity = 1
     interactions[(cid,pid)] = activity
+'''
 
 datadir = 'data/extended/'
 
@@ -75,15 +77,21 @@ new_interactions = {}
 pids = list(proteins.keys())
 # Use already queried drug info to save time.
 dr = csv.reader(open(datadir + 'compounds.txt', 'r'))
+next(dr)
 for i, cid, smiles in dr:
     drugs[cid] = smiles
 # Query interactions for all proteins, adding drugs as they are found.
+count = 0
 while pids:
     pid = pids.pop(0)
     try:
         rows = pubchem_query_protein_interactions(pid)
     except AssertionError as e:
         print('Error querying protein interactions', str(e))
+        pids.append(pid)
+        continue
+    except json.JSONDecodeError as e:
+        print('JSONDecodeError', str(e))
         pids.append(pid)
         continue
     for row in rows:
@@ -105,6 +113,14 @@ while pids:
         new_interactions[(cid,pid)] = (inactives, actives)
         sequence = proteins[pid]
         print(pid, cid, actives, inactives)
+        if count % 10000 == 0:
+            with open(datadir + 'compounds.txt', 'w') as f:
+                w = csv.writer(f, lineterminator='\n')
+                w.writerow(('', 'cid', 'smiles'))
+                for index, (cid, smiles) in enumerate(drugs.items()):
+                    w.writerow((index, cid, smiles))
+        count += 1
+
 
 for ((cid, pid), (actives, inactives)) in new_interactions.items():
     if (cid, pid) in interactions and interactions[(cid,pid)] == 1:
