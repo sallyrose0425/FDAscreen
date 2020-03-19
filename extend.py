@@ -81,7 +81,7 @@ next(dr)
 for i, cid, smiles in dr:
     drugs[cid] = smiles
 # Query interactions for all proteins, adding drugs as they are found.
-count = 0
+new_count = 0
 while pids:
     pid = pids.pop(0)
     try:
@@ -100,8 +100,13 @@ while pids:
             continue
         activity = int(activity == 'Active')
         if cid not in drugs:
-            smiles = pubchem_cid_to_canonical_smiles(cid)
-            drugs[cid] = smiles
+            try:
+                smiles = pubchem_cid_to_canonical_smiles(cid)
+                drugs[cid] = smiles
+                new_count += 1
+            except AssertionError as e:
+                print('Error getting SMILES for cid', cid)
+                continue
         else:
             smiles = drugs[cid]
         if (cid, pid) in new_interactions:
@@ -113,13 +118,13 @@ while pids:
         new_interactions[(cid,pid)] = (inactives, actives)
         sequence = proteins[pid]
         print(pid, cid, actives, inactives)
-        if count % 10000 == 0:
+        if new_count > 1000:
             with open(datadir + 'compounds.txt', 'w') as f:
                 w = csv.writer(f, lineterminator='\n')
                 w.writerow(('', 'cid', 'smiles'))
                 for index, (cid, smiles) in enumerate(drugs.items()):
                     w.writerow((index, cid, smiles))
-        count += 1
+            new_count = 0
 
 
 for ((cid, pid), (actives, inactives)) in new_interactions.items():
